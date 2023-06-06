@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Accueil</title>
+    <link rel="stylesheet" href="../CSS/Accueil.css">
+    <link rel="stylesheet" href="../CSS/BASE.css">
+    <link rel="stylesheet" href="../CSS/popup.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="../HTML/Accueil.html" class="logo-container">
+                            <img src="../Images/Logo.png" alt="Logo" class="logo" id="logo">
+                            <span class="text_logo">PERRIGUEY</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/Experiences.html">
+                            <span class="box">Expériences</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/Diplomes.html">
+                            <span class="box">Diplômes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/Roue_Competences.html">
+                            <span class="box">Compétences</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/Centres_Interets.html">
+                            <span class="box">Intérêts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/Contacts.html">
+                            <span class="box">Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carre">
+            <img src="../Images/Photo2.png" class="Photo" alt="L'image n'est pas accessible pour le moment" title=""
+                width="500" height="500" />
+
+
+            <div class="intro">
+                <p class="phrase1">— Je suis Julien Perriguey.</p>
+                <p class="phrase2">Étudiant en BUT Informatique</p>
+                <p class="phrase3">
+                    Après avoir obtenu un BAC Général avec les spécialités <a class="infos" href="">Mathématiques</a> et
+                    Numérique & Sciences Informatiques
+                    <a class="infos modal-trigger" data-modal="myModal1">(NSI)</a>, j'ai choisi de poursuivre mon cursus scolaire vers des études
+                    en informatique.
+                    Je suis alors devenu étudiant en première année de BUT informatique à l'IUT de Lannion.
+                </p>
+                <div id="myModal1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <span class="close">&times;</span>
+                            <p> L'enseignement de spécialité <i>Numérique et Sciences Informatiques</i> propose
+                                d'étudier
+                                l'informatique et est particulièrement centré sur l'apprentissage de la programmation.
+                                Elle permet donc d'en apprendre les bases, pour élaborer des logiciels, des sites
+                                internet,
+                                ou encore des applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="phrase4">
+                    Passionné par la conception et la réalisation de sites et d'applications web,
+                    j'ai pour objectif de devenir <a class="infos" href="#">développeur web</a> professionnel.
+                    Pour y parvenir, je souhaite poursuivre vers une deuxième et troisième année de BUT, en alternance.
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="../JS/Logo.js"></script>
+<script src="../JS/popup.js"></script>
+
+</html>
