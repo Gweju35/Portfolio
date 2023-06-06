@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 1.03 Systeme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Nom de la région (config)</h1>
+        <ul>
+            <li>Population (config)</li>
+            <li>Superficie (config)</li>
+            <li>Nombre de départments (config)</li>
+            <li><img src="votrelogo.png" title="Logo" alt="Logo a placer ici" height="200px"></li>
+        </ul>
+        <div class="bottom">
+            <div id="footer"></div>
+            <script>
+                var today = new Date();
+                var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                var time = today.getHours() + ":" + today.getMinutes();
+                var dateTime = date + ' ' + time;
+                document.getElementById("footer").innerHTML = "Généré le " + dateTime;
+            </script>
+        </div>
+    </section>
+
+    <section>
+        <h1 id="title"></h1>
+        <script>
+            var today = new Date();
+            var currentMonth = today.getMonth() + 1;
+            var currentQuarter = Math.floor((currentMonth - 1) / 3) + 1;
+            var currentYear = today.getFullYear();
+            document.getElementById("title").innerHTML = "Résultats trimestriels " + currentQuarter + "-" + currentYear;
+        </script>
+        <br />
+
+        <p> LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+        </p>
+        <br />
+
+        <table>
+            <caption>Tableau des résultats</caption>
+            <tr>
+                <th>Nom du produit</th>
+                <th>Ventes du trimestre</th>
+                <th>Chiffre d'affaires du trimestre</th>
+                <th>Ventes du même trimestre année précédente</th>
+                <th>Chiffres d'affaires du même trimestre de l'année précédente </th>
+                <th>Evolution du chiffre d'affaire</th>
+            </tr>
+            <tr>
+                <th>LOREM IPSUM</th>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+            </tr>
+            <tr>
+                <th>LOREM IPSUM</th>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+            </tr>
+            <tr>
+                <th>LOREM IPSUM</th>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+                <td>LOREM IPSUM</td>
+            </tr>
+        </table>
+        <div class="bottom">
+            <div id="footer1"></div>
+            <script>
+                var today = new Date();
+                var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                var time = today.getHours() + ":" + today.getMinutes();
+                var dateTime = date + ' ' + time;
+                document.getElementById("footer1").innerHTML = "Généré le " + dateTime;
+            </script>
+        </div>
+    </section>
+
+    <section>
+        <h1>Nos meilleurs vendeurs du trimestre :</h1>
+        <div style="display: flex;">
+            <div>
+                <figure>
+                    <img src="votrelogo.png" title="Logo" alt="Logo a placer ici" height="200px" style="margin: auto;">
+                </figure>
+                <p>Nom de l'image 1</p>
+            </div>
+            <div>
+                <figure>
+                    <img src="votrelogo.png" title="Logo" alt="Logo a placer ici" height="200px" style="margin: auto;">
+                </figure>
+                <p>Nom de l'image 2</p>
+            </div>
+            <div>
+                <figure>
+                    <img src="votrelogo.png" title="Logo" alt="Logo a placer ici" height="200px" style="margin: auto;">
+                </figure>
+                <p>Nom de l'image 3</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="footer2"></div>
+            <script>
+                var today = new Date();
+                var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                var time = today.getHours() + ":" + today.getMinutes();
+                var dateTime = date + ' ' + time;
+                document.getElementById("footer2").innerHTML = "Généré le " + dateTime;
+            </script>
+        </div>
+    </section>
+
+    <section>
+        <h1><a href="https://bigbrain.biz/FR-BRE">Lien vers page fictive du site de la société</a></h1>
+        <figure>
+            <img src="qrcode.png" title="QRCode" alt="QRCode" height="200px" style="margin: auto;">
+        </figure>
+        <div class="bottom">
+            <div id="footer3"></div>
+            <script>
+                var today = new Date();
+                var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                var time = today.getHours() + ":" + today.getMinutes();
+                var dateTime = date + ' ' + time;
+                document.getElementById("footer3").innerHTML = "Généré le " + dateTime;
+            </script>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+Répartition des tâches (en %age) sur le 2nd Rendu :
+
+Julien Perriguey : 100%
+- HTML-SAE.html & style.css (refonte de l'HTML et du CSS (du Rendu 1) -- L'ancien HTML & l'ancien CSS ne correspondaient pas à ce qui était attendu)
+- regions.conf  
+- conversion.sh (redimensionne les images, ajoute nuance de gris, etc...)
+- TACHES_2.txt  
+- LISEZMOI_2.txt
+- LISEZMOI_3.txt
+- LISEZMOI_4.txt
+- LISEZMOI_5.txt
+- LISEZMOI_FINAL.txt
+- qrcode.png (exemple de QRCode codant l'url) 
+- qrcode.sh (script Bash pour créer un QRCode)
+- ConversionHTML.php (Modèle HTML convertis en PHP)
+- HTML_to_PDF.sh (script Bash qui convertit les modèles HTML (.php) en PDF)
+- Processus.sh (script Bash qui lance le processus de création des PDF + archivage des PDF dans un dossier)
+
+Erwan Finance : ?% (Pas présent en Semaine 1 et 2)
+- Elaboration de l'algorithme qui donne l'heure de création d'un PDF
+
+Julian Lecardonnel : ?%
+- Ancien modèle HTML, qui a servi à créer le nouveau (qui correspond maintenant à ce qui est attendu)
+
+Amine Belaidi : 0% (Pas présent en Semaine 1 et 2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

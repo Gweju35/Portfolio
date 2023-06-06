@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Changement de contenu</title>
+  <style>
+    .content {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="#" onclick="showContent(1)">Thème 1</a>
+  <a href="#" onclick="showContent(2)">Thème 2</a>
+</nav>
+
+<div id="content1" class="content active">
+  <h1>Contenu du thème 1</h1>
+  <p>Ceci est le contenu du thème 1.</p>
+</div>
+
+<div id="content2" class="content">
+  <h1>Contenu du thème 2</h1>
+  <p>Ceci est le contenu du thème 2.</p>
+</div>
+
+<script>
+  function showContent(theme) {
+    // Masquer tous les contenus
+    var contents = document.getElementsByClassName('content');
+    for (var i = 0; i < contents.length; i++) {
+      contents[i].classList.remove('active');
+    }
+
+    // Afficher le contenu du thème sélectionné
+    var selectedContent = document.getElementById('content' + theme);
+    selectedContent.classList.add('active');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Vous devez d'abord récupérer l'image 'sae103-php', en tapant la commande :
+docker pull image sae103-php
+
+Ensuite vous devez lancer le conteneur, avec la commande:
+docker run image sae103-php
+
+Pour lancer le script PHP taper cette commande :
+docker run --rm -ti -v /Docker/votre_volume:/work -w /work sae103-php ./script.php "Nom de votre fichier"
+
+Si vous souhaitez extraire les informations d'un fichier nommé "Bretagne.txt",  et que le chemin pour y accéder est "/Documents/SAE/fichier" alors la ligne de commande ressemblera à ceci:
+docker run --rm -ti -v /Docker/SAE/fichier:/work -w /work sae103-php ./script.php Bretagne.txt
+
+ 

@@ -1,0 +1,302 @@
+main {
+    display: flex;
+    position: absolute;
+    top: 105px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 445px;
+    background: rgba(36, 70, 108, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5);
+
+}
+
+main a {
+    font-size: 20px
+}
+
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto 0;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+}
+
+/* ----------------- Partie de gauche ----------------- */
+.form-control, textarea {
+    width: 430px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border: 1px solid white;
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* ----------------------- Bouton Envoyer ----------------------- */
+.send-button {
+    cursor: pointer;
+    margin-top: 15px;
+    height: 40px;
+    width: 450px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    background-color: #12428A;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.send-button:hover {
+    background: #31afd4;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.alt-send-button {
+    height: 25px;
+    transition: all .2s ease-in-out;
+    text-align: center;
+    color : white;
+}
+
+.send-text {
+    display: block;
+    margin-top: 15px;
+    font: 700 12px 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -33px, 0px);
+}
+
+/* ------------------------------------ Partie de droite ------------------------------------ */
+.direct-contact-container {
+    position: relative;
+    right: -120px;
+}
+
+/* ----------------- Location, Phone, Email Section ----------------- */
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+
+.list-item {
+    line-height: 4;
+    color: #12428A;
+    text-shadow: 0 0 2px white;
+}
+
+.contact-text {
+    font: 300 18px 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow : none;
+}
+
+.place {
+    margin-left: 62px;
+}
+
+.phone {
+    margin-left: 56px;
+}
+
+.gmail {
+    margin-left: 53px;
+}
+
+.contact-text a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+    color: #31afd4;
+    text-decoration: none;
+}
+
+
+/* ----------------- Réseaux Sociaux Icons ----------------- */
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: white;
+    font-size: 26px;
+}
+
+.social-media-list li {
+    position: relative;
+    right: 30px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: white;
+    background-color: #12428A;
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px white;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background: #31afd4;
+    border: 1px solid white;
+    box-shadow: 0 0 0 1px #fff;
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+    color: white;
+}
+
+
+
+hr {
+    position: relative;
+    right: 30px;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/*Bouton Téléchargement*/
+.bouton {
+    position: relative;
+    top: 290px;
+    right: 205px;
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid white;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    background-color: #12428A;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Kanit, sans-serif;
+}
+
+.bouton span {
+    position: relative;
+    top: -5px;
+    right: -5px;
+}
+
+.bouton:hover {
+    color: white;
+    transition: 0.1s;
+}
+
+.bouton::before,
+.bouton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.3s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bouton::before {
+    left: -13px;
+    background: #31afd4;
+}
+
+.bouton::after {
+    right: -13px;
+    background: #31afd4;
+}
+
+.bouton:hover::before,
+.bouton:hover::after {
+    width: 55%;
+}
+
+/*------------------- Google Maps ------------------- */
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:100px;
+    width:100%;
+}
+.map-responsive iframe {
+    position:relative;
+    left:0;
+    top:30px;
+    height:350px;
+    width:100%;
+}
+
+.modal {
+    transform: translate(0%, -30%);
+}
+
+.adresse {
+    height: 100%;
+}
+
+#myModal1 {
+    padding-top:300px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+Répartition des tâches (en %age) :
+
+Julien Perriguey : 67% (regions.conf / TACHES1_txt / script PHP)
+Erwan Finance : 0% (Pas présent en semaine 1 et 2)
+Julian Lecardonnel : 33%  (HTML & CSS)
+Amine Belaidi : 0% (Pas présent en semaine 1 et 2)

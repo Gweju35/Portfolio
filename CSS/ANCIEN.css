@@ -1,0 +1,289 @@
+/* ------------- POLICE ------------- */
+@font-face {
+  font-family: 'Sedgwick';
+  src: url(../Polices/sedgwickave-regular-webfont.woff) format('woff'),
+    url(../Polices/sedgwickave-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url(../Polices/orbitron-medium-webfont.woff) format('woff'),
+    url(../Polices/orbitron-medium-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url(../Polices/bebasneue-regular-webfont.woff) format('woff'),
+    url(../Polices/bebasneue-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Righteous';
+  src: url(../Polices/righteous-regular-webfont.woff) format('woff'),
+    url(../Polices/righteous-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Russo One';
+  src: url(../Polices/russoone-regular-webfont.woff) format('woff'),
+    url(../Polices/russoone-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url(../Polices/kanit-regular-webfont.woff) format('woff'),
+    url(../Polices/kanit-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../Polices/poppins-regular-webfont.woff) format('woff'),
+    url(../Polices/poppins-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../Polices/rubik-regular-webfont.woff) format('woff'),
+    url(../Polices/rubik-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ------------------------------------------------ */
+#nsi:hover span {
+  top: -115px;
+  margin-right: -200px;
+}
+
+.infos {
+  text-decoration: none;
+  color: #31afd4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.intro {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.phrase1 {
+  color: #FF007F;
+  font-family: 'Russo One';
+  font-size: 35px;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.phrase2 {
+  color: #e0aaff;
+  font-family: 'Russo One';
+  font-size: 28px;
+  margin-top: -60px;
+  margin-left: 87px;
+}
+
+.phrase3 {
+  color: #e0aaff;
+  font-family: 'Poppins';
+  font-size: 16px;
+  margin-left: 80px;
+  margin-top: -20px;
+  padding-right: 50px;
+  letter-spacing: 1.5px;
+}
+
+.phrase4 {
+  color: #e0aaff;
+  font-family: 'Poppins';
+  font-size: 16px;
+  margin-left: 80px;
+  margin-top: -10px;
+  padding-right: 50px;
+  letter-spacing: 1.5px;
+}
+
+img {
+  border-radius: 7%;
+  clip-path: polygon(50%);
+  margin-top: 25px;
+  margin-left: 40px;
+  width: 375px;
+  height: 375px;
+  background-image: url("../Images/Fond_Etoile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: rotate 60s linear infinite;
+  border: #e0aaff solid 1px;
+}
+
+
+
+.rectangle {
+  display: flex;
+  border-radius: 4%;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 425px;
+  background-color: #520073;
+  border: #e0aaff solid;
+}
+
+/* ------------- POP UP ------------- */
+a.hoverbubble {
+  position: relative;
+  color: #31afd4;
+}
+
+a.hoverbubble span {
+  display: none;
+}
+
+a.hoverbubble:hover span {
+  display: block;
+  position: absolute;
+  padding: .5em;
+  content: attr(title);
+  min-width: px;
+  text-align:left;
+  width: auto;
+  height: auto;
+  white-space: wrap;
+  background: #240046;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #31afd4;
+  font-size: 0.80em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: #31afd4 solid 1px;
+}
+
+a.hoverbubble:hover span:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: #31afd4 transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+}
+
+/* ------------- PAGE ------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #240046;
+}
+
+/* ------------- BARRE DE MENU ------------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+h2 {
+  display: flex;
+  font-size: 25px;
+  margin-right: 60px;
+  margin-left: 15px;
+  margin-top: 25px;
+  text-align: center;
+  font-family: 'Sedgwick', sans-serif;
+  color: #FF007F;
+  -webkit-text-stroke: 0.01px white;
+}
+
+.barre {
+  background-image: url(../Images/Fond_Etoile.png);
+  background-position:300px 125px;
+  margin-left: -5px;
+  margin-top: -13px;
+  width: 100.9%;
+  height: 75px;
+  display: flex;
+  background-color: #240046;
+  border: #FF007F solid;
+}
+
+button {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #FF007F;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  background-color: #240046;
+  margin-right: 50px;
+  margin-top: 12.5px;
+}
+
+button::before,
+button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+button::before {
+  left: -10px;
+  background: #FF007F;
+}
+
+button::after {
+  right: -10px;
+  background: #FF007F;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 58%;
+}
+
+button:hover span {
+  color: #240046;
+  transition: 0.3s;
+}
+
+button span {
+  color: #FF007F;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+  font-weight: bold;
+  font-family: 'Orbitron';
+}

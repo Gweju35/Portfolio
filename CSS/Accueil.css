@@ -1,0 +1,78 @@
+/*------------ INTRO ------------*/
+.carre {
+    display: flex;
+    position: absolute;
+    top: 115px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 425px;
+    background: rgba(36, 70, 108, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.Photo {
+    margin-top: 25px;
+    margin-left: 40px;
+    width: 375px;
+    height: 375px;
+    background-image: url(../Images/Stars.jpg);
+    background-size: cover;
+    border-radius: 16px;
+    box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.4);
+}
+
+#nsi:hover span {
+    top: -115px;
+    margin-right: -200px;
+}
+
+.infos {
+    text-decoration: none;
+    color: #31afd4;
+}
+
+
+.intro {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.phrase1 {
+    color: #FF007F;
+    font-family: 'Russo One', sans-serif;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.phrase2 {
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 28px;
+    margin-left: 87px;
+}
+
+.phrase3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 76px;
+    margin-top: 10px;
+    padding-right: 50px;
+    letter-spacing: 2px;
+}
+
+.phrase4 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 76px;
+    margin-top: 10px;
+    padding-right: 50px;
+    letter-spacing: 2px;
+}
+

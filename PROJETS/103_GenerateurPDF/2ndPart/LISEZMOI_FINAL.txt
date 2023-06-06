@@ -1,0 +1,19 @@
+Pour lancer le processus qui va traiter tous les PDF et produire une archive contenant tous les PDF, il suffit de lancer la commande :
+bash Processus.sh
+
+Le processus va d'abord vous demander votre login (la 1ère lettre de votre prénom, puis votre nom de famille), le login servira à lancer 
+le script qui convertis les fichiers HTML en fichier PDF. 
+Puis on va vous demander dans quel dossier le processus doit s'effectuer. Il faut impérativement donner le dossier 
+où le client à déposer les logos des régions, ainsi que les photos des vendeurs, SANS sous-dossiers. S'il y a des sous-dossiers
+veuillez réunir toutes les images dans un SEUL dossier.
+Enfin, vous devrez donner le chemin du dossier où vous souhaiter retrouver votre archive contenant tout les PDF.
+Une fois fait, pour chaque région de France.
+La création va pouvoir commencer, et les 13 régions seront traitées à la suite.
+
+Le processus va débuter par l'extraction des données du fichier texte concernant la région, et créera les fichiers texte.dat, comm.dat et tableau.dat. Puis le processus effectuera la conversion des fichiers '.svg' en '.png', leur taille sera redimensionner en 200x200 pixels, 
+et en nuance de gris. Ensuite, le processus va créer le QRCode correspondant à la région donnée.
+Le processus poursuivra en convertissant le fichier PHP, qui donnera suite à cela le modèle de fichier PDF en '.html'.
+Pour finir, le processus convertira ce fichier HTML en PDF. Puis l'on passera aux regions suivantes. Pour que le processus n'ait pas de confusion avec les fichiers .dat, ces derniers seront supprimés avant de passer à une nouvelle région.
+Une fois que toutes les régions auront été traitées, tout les fichiers PDF créer seront envoyé dans le dossier que vous avez choisi, 
+pour qu'enfin ce dossier soit archivé. 
+

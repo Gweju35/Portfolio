@@ -1,0 +1,28 @@
+Rajouter des compétences techniques : 
+HTML CSS JavaScript Java JavaFX C# Python PHP Bash SQL Canva 
+
+Langues : 
+Francais : langue maternelle
+Anglais : couramment (B1 TOEIC)
+Esapgnol : intermédiaire
+
+
+
+Page Expériences :
+Rectangle semi-transparent
+3 choix d'expériences en haut (1 seul apparaît à la fois)
+
+
+Page Diplômes :
+Rectangle à gauche 
+Rectangle à droite
+Rectangle ultra horizontal
+
+Page Compétences : 
+Rectangles semi-transparent 
+Choix de projet (1 seul apparait)
+
+Page Intérêts :
+Plein de rectangles à la verticale, en ligne et en colonne 
+| | | |
+| | | |

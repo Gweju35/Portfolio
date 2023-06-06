@@ -1,0 +1,17 @@
+Vous devez d'abord récupérer l'image 'html2pdf', en tapant la commande :
+docker pull image html2pdf
+
+Ensuite vous devez lancer le conteneur, avec la commande:
+docker run image html2pdf -it --rm
+
+Vous aller ensuite executer cette commande :
+docker run --rm -ti -v /Docker/<votre_login>:/work sae103-html2pdf "html2pdf fichier.html fichier.pdf"
+Où 'fichier.html' sera le nom de votre fichier html et où 'fichier.pdf' sera le nom de votre fichier pdf.
+Et pour votre login c'est ... votre login
+
+Exemple: 
+Mon login est jperriguey
+Mon fichier.html se nomme SAE103.html
+Mon fichier PDF se nommera SAE103.pdf
+La commande ressemblera à cela :
+docker run --rm -ti -v /Docker/jperriguey:/work sae103-html2pdf "html2pdf SAE103.html SAE103.pdf"

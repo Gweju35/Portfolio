@@ -1,0 +1,110 @@
+a {
+    color: #31afd4;
+}
+
+main a {
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    font-weight: lighter;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.conteneur {
+    display: flex;
+    position: absolute;
+    top: 115px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 425px;
+    background: rgba(36, 70, 108, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.carre {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    border: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(36, 70, 108, 0.4);
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.carre:hover {
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.6);
+}
+
+
+/*------------------- BUT & BAC -------------------*/
+.carre1, .carre2 {
+    height: 225px;
+    width: 410px;
+    top: 30px;
+}
+
+.carre1 p, .carre2 p {
+    margin-top: 10px;
+    padding: 0 18px;
+}
+
+.carre1 a, .carre2 a {
+    position: relative;
+    top: 20px;
+    padding: 0 20px;
+}
+
+.carre1 {
+    z-index: 3;
+    left: 0;
+    margin-left: 5%;
+}
+
+.carre2 {
+    z-index: 2;
+    right: 0;
+    margin-right: 5%;
+}
+
+/*------------------- TOEIC -------------------*/
+.carre3 {
+    z-index: 1;
+    height: 70px;
+    width: 820px;
+    margin: 0 10%;
+    bottom: 35px;
+}
+
+.carre3 h2 {
+    position: relative;
+    top: -5px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.carre3 p{
+    padding: 0 5px;
+    font-size: 13px;
+}
+
+.carre3 a {
+    position: relative;
+    top: -70px;
+    left: 120px;
+    padding: 0 5px;
+}

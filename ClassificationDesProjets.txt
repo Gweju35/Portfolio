@@ -1,0 +1,29 @@
+REALISER : 
+Création d'un jeu de Puissance 4 - SAE101 													FAIT
+Développement d'applications - SAE 201 													PAS ENCORE COMMENCER
+Création du jeu des chiffres et des lettres - 1ère NSI 												FAIT
+
+OPTIMISER : 
+Création d'une IA pour un jeu de Puissance 4 - SAE102  												FAIT
+Création d'un algorithme résolvant le problème des huit reines - SAE202 									FAIT
+
+ADMINISTRER :
+Génération de PDF pour une entreprise grâce au langage Bash & PHP + utilisation de Docker - SAE103 						FAIT
+Installation de services réseau - SAE203 												PAS ENCORE COMMENCER
+
+GERER : 
+Création d'une base de données - SAE104 													FAIT
+Exploitation d'une base de données - SAE204 													EN COURS
+
+CONDUIRE : 
+Création d'un site internet - SAE105 														FAIT
+Rédaction d'un dossier de gestion de projet - SAE205 												EN COURS
+
+COLLABORER : 
+Présentation de la RSE d'une Entreprise - SAE106 												FAIT
+Organisation d'un évènement de Team Building - SAE206 												FAIT 
+
+
+
+
+
