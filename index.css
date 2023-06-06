@@ -1,32 +1,32 @@
 /* ------------- POLICES ------------- */
 @font-face {
     font-family: 'Orbitron';
-    src: url(../PagePersonnelle/Polices/orbitron-medium-webfont.woff) format('woff'),
-    url(../PagePersonnelle/Polices/orbitron-medium-webfont.woff2) format('woff2');
+    src: url(./Polices/orbitron-medium-webfont.woff) format('woff'),
+    url(./Polices/orbitron-medium-webfont.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Russo One';
-    src: url(../PagePersonnelle/Polices/russoone-regular-webfont.woff) format('woff'),
-    url(../PagePersonnelle/Polices/russoone-regular-webfont.woff2) format('woff2');
+    src: url(./Polices/russoone-regular-webfont.woff) format('woff'),
+    url(./Polices/russoone-regular-webfont.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Kanit';
-    src: url(../PagePersonnelle/Polices/kanit-regular-webfont.woff) format('woff'),
-    url(../PagePersonnelle/Polices/kanit-regular-webfont.woff2) format('woff2');
+    src: url(./Polices/kanit-regular-webfont.woff) format('woff'),
+    url(./Polices/kanit-regular-webfont.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url(../PagePersonnelle/Polices/poppins-regular-webfont.woff) format('woff'),
-    url(../PagePersonnelle/Polices/poppins-regular-webfont.woff2) format('woff2');
+    src: url(./Polices/poppins-regular-webfont.woff) format('woff'),
+    url(./Polices/poppins-regular-webfont.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -42,7 +42,7 @@
 body {
     height: 100%;
     width: 100%;
-    background-image: url(../PagePersonnelle/Images/Stars.jpg);
+    background-image: url(./Images/Stars.jpg);
     background-size: auto;
     zoom: 98.7%;
 }
@@ -216,7 +216,7 @@ a span {
     margin-left: 40px;
     width: 375px;
     height: 375px;
-    background-image: url(../PagePersonnelle/Images/Stars.jpg);
+    background-image: url(./Images/Stars.jpg);
     background-size: cover;
     border-radius: 16px;
     box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.4);
