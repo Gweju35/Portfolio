@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Projets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../CSS/Roue_Competences.css">
     <link rel="stylesheet" href="../CSS/BASE.css">
 </head>
@@ -69,7 +70,7 @@
             <a href="../HTML/Competence5.html">Conduire un projet</a>
         </div>
         <div class="cercle cercle6">
-            <a href="../HTML/Competence6.html">Collaborer dans une équipe informatique</a>
+            <a href="../HTML/Competence6.html">Travailler dans une équipe informatique</a>
         </div>
         <div class="rectangle rectangle-1">
             - Implémenter des conceptions simples. <br/>
@@ -104,13 +105,76 @@
             - Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire <br/>
             - Acquérir les compétences interpersonnelles pour travailler en équipe
         </div>
+
+        <div class="imgComp">
+            <img src="../Images/competences.png" alt="Compétences">
+        </div>
     </div>
 
+    <div class="conteneur">
+        <div class="carre">
+            <div class="espace">
+                <h2>Compétences techniques </h2>
 
-    <div class="comp">
-        <img src="../Images/competences.png" alt="Compétences">
+                <div class="categories">
+                    <h3>Développement web : </h3>
+                    <button class="competences">HTML</button>
+                    <button class="competences">CSS</button>
+                    <button class="competences">JavaScript</button>
+                    <button class="competences">PHP</button>
+                    <button class="competences">Figma</button>
+                    <button class="competences">Canva</button>
+                </div>
+
+                <div class="categories">
+                    <h3>Base de données : </h3>
+                    <button class="competences">SQL</button>
+                    <button class="competences">PostgreSQL</button>
+                    <button class="competences long">MySQL Workbench</button>
+                    <button class="competences">Tutorial D</button>
+                    <button class="competences long">Diagramme UML</button>
+                </div>
+
+                <div class="categories">
+                    <h3>Développement logiciel : </h3>
+                    <button class="competences">Java</button>
+                    <button class="competences">JavaFX</button>
+                    <button class="competences">C</button>
+                    <button class="competences">Python</button>
+                    <button class="competences">Bash</button>
+                </div>
+
+                <div class="categories">
+                    <h3>Systèmes d'exploitation : </h3>
+                    <button class="competences">Windows</button>
+                    <button class="competences">Linux</button>
+                </div>
+
+                <div class="categories">
+                    <h3>IDE : </h3>
+                    <button class="competences long">Visual Studio Code</button>
+                    <button class="competences">WebStorm</button>
+                    <button class="competences">IntelliJ</button>
+                    <button class="competences">Eclipse</button>
+                    <button class="competences">EduPython</button>
+                </div>
+
+                <div class="categories">
+                    <h3>Gestion de versions : </h3>
+                    <button class="competences">Git</button>
+                </div>
+
+                <div class="categories">
+                    <h3>Langues : </h3>
+                    <button class="competences langues">Anglais - Avancé</button>
+                    <button class="competences langues">Espagnol - intermédiaire</button>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <button class="scroll-button up" onclick="scrollToTop()"><i class="fa fa-arrow-up"></i></button>
+    <button class="scroll-button down" onclick="scrollToBottom()"><i class="fa fa-arrow-down"></i></button>
 
 </main>
 
@@ -118,7 +182,21 @@
 
 
 </body>
-
 <script src="../JS/Roue_Projets.js"></script>
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+<script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    function scrollToBottom() {
+        window.scrollTo({
+            top: 560,
+            behavior: "smooth"
+        });
+    }
+</script>
 
 </html>

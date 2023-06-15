@@ -1,3 +1,4 @@
+# Ce code est l'algorithme principal 
 # Ce programme est un algorithme de backtracking qui permet de résoudre le problème des huit reines 
 def estValide(echiquier, ligne, colonne):
     """ Vérifie si la case (ligne, colonne) est sûre pour placer une reine """

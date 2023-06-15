@@ -1,52 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Affichage de la carte Google Maps</title>
-    <style>
+    <title>Test</title>
 
-        #overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Fond sombre avec une opacité de 0.5 */
-            visibility: hidden; /* Par défaut, l'overlay est masqué */
-            opacity: 0;
-            transition: visibility 0s linear 0.3s, opacity 0.3s;
-        }
-
-        #popup-link:focus + #overlay {
-            visibility: visible; /* Affiche l'overlay lorsque le lien est en focus */
-            opacity: 1;
-        }
-
-        #popup {
-            background-color: #fff;
-            width: 300px;
-            margin: 100px auto;
-            padding: 20px;
-        }
-
-        #close-btn {
-            display: block;
-            margin-top: 20px;
-        }
-
-
-    </style>
 </head>
 <body>
-
-<a href="#popup" id="popup-link">Ouvrir la pop-up</a>
-
-<div id="overlay">
-    <div id="popup">
-        <h2>Contenu de la pop-up</h2>
-        <p>Ceci est le contenu de la pop-up.</p>
-        <a href="#" id="close-btn">Fermer</a>
-    </div>
-</div>
 
 
 

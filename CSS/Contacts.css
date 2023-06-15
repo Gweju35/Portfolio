@@ -215,7 +215,6 @@ hr {
     border-radius: 3px;
     border: 1px solid white;
     overflow: hidden;
-    transition: all 0.5s ease-in;
     z-index: 1;
     background-color: #12428A;
     color: white;
@@ -232,7 +231,6 @@ hr {
 }
 
 .bouton:hover {
-    color: white;
     transition: 0.1s;
 }
 

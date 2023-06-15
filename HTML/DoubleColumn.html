@@ -2,16 +2,9 @@
 <html>
 <head>
   <title>Changement de contenu</title>
-  <style>
-    .content {
-      display: none;
-    }
-    .active {
-      display: block;
-    }
-  </style>
 </head>
 <body>
+
 <nav>
   <a href="#" onclick="showContent(1)">Thème 1</a>
   <a href="#" onclick="showContent(2)">Thème 2</a>
@@ -33,11 +26,17 @@
     var contents = document.getElementsByClassName('content');
     for (var i = 0; i < contents.length; i++) {
       contents[i].classList.remove('active');
+      contents[i].classList.remove('fade-in');
+      contents[i].classList.add('fade-out');
     }
 
-    // Afficher le contenu du thème sélectionné
-    var selectedContent = document.getElementById('content' + theme);
-    selectedContent.classList.add('active');
+    // Afficher le contenu du thème sélectionné avec un léger délai pour permettre la transition
+    setTimeout(function() {
+      var selectedContent = document.getElementById('content' + theme);
+      selectedContent.classList.add('active');
+      selectedContent.classList.remove('fade-out');
+      selectedContent.classList.add('fade-in');
+    }, 10);
   }
 </script>
 </body>

@@ -1,0 +1,83 @@
+.conteneur {
+    position: absolute;
+    height: 100vh;
+    top: 455px;
+    right: 84.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.rectangle {
+    position: absolute;
+    width: 1000px;
+    height: 830px;
+    border: 1px;
+    bottom: 60px;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(36, 70, 108, 0.4);
+    box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.espace {
+    margin: 0 15px;
+}
+
+.images {
+    height: 125px;
+    width: 125px;
+    display: flex;
+    margin: 10px auto auto;
+}
+
+hr {
+    margin-top: 5px;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.premier {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.deuxieme {
+    display: flex;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.carre {
+    height: 380px;
+    margin: 20px 15px 10px;
+    flex: 1;
+    border-radius: 10px;
+    background: rgba(36, 70, 108, 0.4);
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.carre:hover {
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.6);
+}
+
+p {
+    font-family: Poppins, sans-serif;
+    padding: 8px;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    line-height: 15px;
+}
+
+main a {
+    color: #31afd4;
+    font-style: italic;
+}
+
+

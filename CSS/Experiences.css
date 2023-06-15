@@ -1,0 +1,135 @@
+.fade-in {
+    animation: fade-in 0.5s forwards;
+}
+.fade-out {
+    animation: fade-out 0.5s forwards;
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.conteneur {
+    display: flex;
+    position: absolute;
+    top: 115px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 425px;
+    background: rgba(36, 70, 108, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.carre {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    border: 1px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: rgba(36, 70, 108, 0.4);
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    margin-left: 10px;
+}
+
+.carre:hover {
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.6);
+}
+
+h2 {
+    position: relative;
+    left: 285px;
+    color: white;
+    padding: 10px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.carre1 {
+    top: 60px;
+    left: 90px;
+}
+
+div nav a {
+    font-family: "Russo One", sans-serif;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.active-link {
+    border-bottom: 2px solid #31afd4;
+    color: #31afd4;
+    line-height: 0.5;
+}
+
+.carre2 {
+    top: 140px;
+    left: 50px;
+    width: 900px;
+    height: 225px ;
+}
+
+.content {
+    position: absolute;
+    margin: 10px 10px;
+    left: 0;
+    top : 50px;
+    opacity: 0;
+    color: white;
+    transition: opacity 0.5s ease;
+    width: 620px;
+}
+
+.logo_job {
+    position: absolute;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.alliora {
+    bottom: 18px;
+}
+
+.foirfouille, .fougeres {
+    bottom: 38px;
+}
+
+h1, p {
+    position: relative;
+    left: 250px;
+    bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+p a {
+    color: #31afd4;
+}
+
+.active {
+    opacity: 1;
+}

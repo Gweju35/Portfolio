@@ -115,7 +115,7 @@
 
         </div>
         <div>
-            <button class="bouton" id="downloadButton"><span><i class="fa fa-download"></i>Télécharger CV</span>
+            <button class="bouton" onclick="downloadFile()"><span><i class="fa fa-download"></i>    CV</span>
             </button>
         </div>
     </div>
@@ -159,15 +159,14 @@
 <script src="https://use.fontawesome.com/20ab91acc4.js"></script>
 <script src="../JS/popup.js"></script>
 <script>
-    var downloadButton = document.getElementById('downloadButton');
-    downloadButton.addEventListener('click', function () {
-        var fileUrl = '../Dossiers/PERRIGUEY_Julien_CV.pdf';
-        var fileName = 'PERRIGUEY_Julien_CV.pdf';
-        var a = document.createElement('a');
-        a.href = fileUrl;
-        a.download = fileName;
-        a.click();
-    });
+    function downloadFile() {
+        var url = "../Dossiers/PERRIGUEY_Julien_CV.pdf";
+        var fileName = "PERRIGUEY_Julien_CV.pdf";
+        var link = document.createElement("a");
+        link.href = url;
+        link.download = fileName;
+        link.click();
+    }
 </script>
 
 </html>
