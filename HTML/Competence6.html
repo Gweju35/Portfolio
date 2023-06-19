@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio - RÉALISER</title>
-  <link rel="stylesheet" href="../CSS/Competence6.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Compétence COLLABORER</title>
   <link rel="stylesheet" href="../CSS/BASE.css">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="../CSS/Competence6.css">
 </head>
 
 <body>
@@ -52,19 +52,120 @@
   </nav>
 </header>
 
+<main>
+  <div class="conteneur">
+    <div class="rectangle">
+      <div class="espace">
 
 
-  <main>
+        <div class="description">
+          <h1>Travailler dans une équipe informatique</h1>
+          <hr>
+          <h2>Identifier ses aptitudes pour travailler dans une équipe</h2>
+          <h3>Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.</h3>
+          <div class="liste">
+            <p>- Appréhender l’écosystème numérique</p>
+            <p>- Découvrir les aptitudes requises selon les différents secteurs informatiques</p>
+            <p>- Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire</p>
+            <p>- Acquérir les compétences interpersonnelles pour travailler en équipe</p>
+          </div>
+        </div>
 
-  </main>
+        <div class="carre carre1">
+          <nav>
+            <a id="link1" href="#" onclick="showContent(1, event)" class="active-link">RSE d'une organisation</a>
+            <a id="link2" href="#" onclick="showContent(2, event)">Évènement de Team Building</a>
+          </nav>
+        </div>
+
+        <div class="carre carre2">
+          <div id="content1" class="content active">
+            <h1>Présentation de la RSE d'une entreprise</h1>
+            <div class="projet">
+              <h2>Description du projet :</h2>
+              <p>Ce projet, réalisé en groupe, a pour but de présenter la RSE d'une entreprise. Nous avons alors
+                sélectionné l'entreprise Apple. Nous avons par la suite effectué diverses recherches, pour la présenter
+                dans sa dimension économique et dans ce qui relève de la RSE, avec un focus particulier sur les moyens
+                qu'elle met en œuvre pour réduire son empreinte écologique du numérique.</p>
+            </div>
+            <div class="ressources">
+              <h2>Ressources mobilisées :</h2>
+              <p>- Introduction à la gestion des organisations</p>
+              <p>- Introduction à l’économie durable et numérique</p>
+              <p>- Anglais</p>
+              <p>- Bases de la communication</p>
+            </div>
+            <div class="outils">
+              <h2>Outils utilisés :</h2>
+              <p>- Canva</p>
+              <p>- Trello</p>
+            </div>
+            <div>
+              <button id="downloadButton1" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+              </button>
+            </div>
+          </div>
 
 
-  <footer>
+          <div id="content2" class="content">
+            <h1>Création d'un évènement de Team Building</h1>
+            <div class="projet">
+              <h2>Description du projet :</h2>
+              <p>Ce projet, réalisé en groupe, a pour but de créer un événement de Team Building pour une entreprise.
+                Nous avons en premier lieu choisi l'entreprise Ventil'Ouest située à Plérin, pour créer notre événement.
+                Nous avons ensuite rédigé un dossier présentant cet événement, ainsi que ses contraintes et son
+                organigramme des tâches. Nous avons après cela, réaliser un flyer pour notre événement, avant de
+                réaliser un film promotionnel pour notre Team Building.</p>
+            </div>
+            <div class="ressources">
+              <h2>Ressources mobilisées :</h2>
+              <p>- Introduction au droit</p>
+              <p>- Anglais</p>
+              <p>- Communication technique</p>
+            </div>
+            <div class="outils">
+              <h2>Outils utilisés :</h2>
+              <p>- Canva</p>
+              <p>- DaVinci Resolve</p>
+              <p>- Audacity</p>
+            </div>
+            <div>
+              <button id="downloadButton2" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
-  </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
 
 </body>
+<script src="../JS/Logo.js"></script>
+<script src="../JS/MultipleColumns.js"></script>
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+<script>
+  document.getElementById("downloadButton1").addEventListener("click", function () {
+    var link = document.createElement("a");
+    link.setAttribute("href", "../PROJETS/RSE.zip");
+    link.setAttribute("download", "RSE.zip");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
 
-<script href="../JS/Logo.js"></script>
-
+  document.getElementById("downloadButton2").addEventListener("click", function () {
+    var link = document.createElement("a");
+    link.setAttribute("href", "../PROJETS/TeamBuilding.zip");
+    link.setAttribute("download", "TeamBuilding.zip");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
 </html>

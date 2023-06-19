@@ -1,0 +1,249 @@
+.conteneur {
+    position: absolute;
+    height: 100vh;
+    top: 505px;
+    right: 84.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.rectangle {
+    position: absolute;
+    width: 1000px;
+    height: 880px;
+    bottom: 60px;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(36, 70, 108, 0.4);
+    box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.espace {
+    margin: 0 15px;
+}
+
+.carre {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    border: 1px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: rgba(36, 70, 108, 0.4);
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.description {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    width: 950px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-left: -5px;
+    margin-right: 25px;
+}
+
+.description h1, h2, h3 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.description h1 {
+    text-align: center;
+    margin-top: -10px;
+}
+
+hr {
+    position: relative;
+    left: 125px;
+    width: 700px;
+    border: solid white 2px;
+    margin-top: -3px;
+    margin-bottom: 10px;
+}
+
+.description h2 {
+    margin-top: 10px;
+    font-size: 27px;
+}
+
+.description h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 590;
+}
+
+.description .liste {
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+
+.description p {
+    margin-top: 5px;
+}
+
+.carre1 {
+    display: flex;
+    position: absolute;
+    top: 270px;
+    margin-left: 100px;
+    color: white;
+    width: 740px;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+
+/* Partie Projet */
+.carre2 {
+    top: 360px;
+    width: 950px;
+    height: 475px;
+}
+
+.content {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 10px 10px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    color: white;
+    transition: opacity 0.5s ease;
+    width: 900px;
+}
+
+.content h1 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 27px;
+    color: #E3D1F0;
+}
+
+.content h2 {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #E3D1F0;;
+}
+
+.content p {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+.projet, .ressources, .outils {
+    margin-top: 15px;
+}
+
+.projet p, .ressources p, .outils p {
+    margin-top: 5px;
+}
+
+
+.active-link {
+    border-bottom: 2px solid #31afd4;
+    color: #31afd4;
+    line-height: 0.5;
+}
+
+.active {
+    opacity: 1;
+}
+
+div nav a {
+    font-family: "Russo One", sans-serif;
+    color: white;
+    margin: 10px 10px 10px 80px;
+    font-size: 20px;
+}
+
+/* Bouton Téléchargement */
+.bouton {
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+    width: 280px;
+    height: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Kanit, sans-serif;
+    background: rgba(36, 70, 108);
+    backdrop-filter: blur(10px);
+    border: solid #E3D1F0 2px;
+}
+
+.bouton span {
+    position: relative;
+    top: -5px;
+    right: -5px;
+    color: #E3D1F0;
+}
+
+.bouton:hover span {
+    color: white;
+}
+
+.bouton:hover {
+    transition: 0.1s;
+}
+
+.bouton::before,
+.bouton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.3s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bouton::before {
+    left: -13px;
+    background: #31afd4;
+}
+
+.bouton::after {
+    right: -13px;
+    background: #31afd4;
+}
+
+.bouton:hover::before,
+.bouton:hover::after {
+    width: 55%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

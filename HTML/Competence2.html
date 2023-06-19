@@ -2,69 +2,172 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio - RÉALISER</title>
-  <link rel="stylesheet" href="../CSS/Competence2.css">
-  <link rel="stylesheet" href="../CSS/BASE.css">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Compétence OPTIMISER</title>
+    <link rel="stylesheet" href="../CSS/BASE.css">
+    <link rel="stylesheet" href="../CSS/Competence2.css">
 </head>
 
 <body>
 
 <header>
-  <nav class="navbar">
-    <div class="nav-links">
-      <ul>
-        <li>
-          <a href="../index.html" class="logo-container">
-            <img src="../Images/Logo.png" alt="Logo" class="logo" id="logo">
-            <span class="text_logo">PERRIGUEY</span>
-          </a>
-        </li>
-        <li>
-          <a href="../HTML/Experiences.html">
-            <span class="box">Expériences</span>
-          </a>
-        </li>
-        <li>
-          <a href="../HTML/Diplomes.html">
-            <span class="box">Diplômes</span>
-          </a>
-        </li>
-        <li>
-          <a href="../HTML/Roue_Competences.html">
-            <span class="box">Compétences</span>
-          </a>
-        </li>
-        <li>
-          <a href="../HTML/Centres_Interets.html">
-            <span class="box">Intérêts</span>
-          </a>
-        </li>
-        <li>
-          <a href="../HTML/Contacts.html">
-            <span class="box">Contacts</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar">
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="../index.html" class="logo-container">
+                        <img src="../Images/Logo.png" alt="Logo" class="logo" id="logo">
+                        <span class="text_logo">PERRIGUEY</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../HTML/Experiences.html">
+                        <span class="box">Expériences</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../HTML/Diplomes.html">
+                        <span class="box">Diplômes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../HTML/Roue_Competences.html">
+                        <span class="box">Compétences</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../HTML/Centres_Interets.html">
+                        <span class="box">Intérêts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../HTML/Contacts.html">
+                        <span class="box">Contacts</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
+<main>
+    <div class="conteneur">
+        <div class="rectangle">
+            <div class="espace">
 
 
-  <main>
+                <div class="description">
+                    <h1>Optimiser des applications informatiques</h1>
+                    <hr>
+                    <h2>Appréhender et construire des algorithmes</h2>
+                    <h3>Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps
+                        d’exécution, précision, consommation de ressources...</h3>
+                    <div class="liste">
+                        <p>- Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données...)</p>
+                        <p>- Comparer des algorithmes pour des problèmes classiques (tris simples, recherche...)</p>
+                        <p>- Formaliser et mettre en œuvre des outils mathématiques pour l’informatique</p>
+                        </div>
+                </div>
 
-  </main>
+                <div class="carre carre1">
+                    <nav>
+                        <a id="link1" href="#" onclick="showContent(1, event)" class="active-link">IA pour un Puissance 4</a>
+                        <a id="link2" href="#" onclick="showContent(2, event)">Problème des Huit Reines</a>
+                    </nav>
+                </div>
+
+                <div class="carre carre2">
+                    <div id="content1" class="content active">
+                        <h1>Création d'une IA pour un jeu de Puissance 4</h1>
+                        <div class="projet">
+                            <h2>Description du projet :</h2>
+                            <p>Ce projet est une extension du projet de création d'un jeu de Puissance 4. Il a pour but
+                                d'améliorer le programme de Puissance4 de manière que l’utilisateur puisse jouer
+                                contre un ordinateur. Il a fallu dans un premier temps présenter la stratégie que notre
+                                IA allait suivre, en rédigeant un paragraphe qui en présente le détail. Dans un second
+                                temps, il a fallu programmer cette stratégie ; la mienne reposant sur l'algorithme
+                                MiniMax. Enfin, j'ai mesuré les performances de mon IA, en la comparant à celles de mes
+                                camarades.
+
+                            </p>
+                        </div>
+                        <div class="ressources">
+                            <h2>Ressources mobilisées :</h2>
+                            <p>- Initiation au développement</p>
+                            <p>- Introduction à l’architecture des ordinateurs</p>
+                            <p>- Mathématiques discrètes</p>
+                            <p>- Outils mathématiques fondamentaux</p>
+                        </div>
+                        <div class="outils">
+                            <h2>Outils utilisés :</h2>
+                            <p>- Langage C</p>
+                        </div>
+                        <div>
+                            <button id="downloadButton1" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+                            </button>
+                        </div>
+                    </div>
 
 
-  <footer>
+                    <div id="content2" class="content">
+                        <h1>Création d'un algorithme pour le problème des Huit Reines</h1>
+                        <div class="projet">
+                            <h2>Description du projet :</h2>
+                            <p>Ce projet a pour but de créer un algorithme permettant la résolution du problème des Huit
+                                Reines. J'ai dans un premier temps proposé un algorithme de type backtracking permettant
+                                de déterminer une solution au problème. Puis dans un second temps, j'ai programmé un
+                                algorithme de parcours en profondeur, qui a servi d'algorithme de comparaison, à
+                                l'algorithme de backtracking.</p>
+                        </div>
+                        <div class="ressources">
+                            <h2>Ressources mobilisées :</h2>
+                            <p>- Graphes</p>
+                            <p>- Outils numériques pour les statistiques descriptives</p>
+                            <p>- Méthodes numériques</p>
+                        </div>
+                        <div class="outils">
+                            <h2>Outils utilisés :</h2>
+                            <p>- Python</p>
+                        </div>
+                        <div>
+                            <button id="downloadButton2" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-  </footer>
+
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
 
 </body>
+<script src="../JS/Logo.js"></script>
+<script src="../JS/MultipleColumns.js"></script>
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+<script>
+    document.getElementById("downloadButton1").addEventListener("click", function () {
+        var link = document.createElement("a");
+        link.setAttribute("href", "../PROJETS/IA_Puissance4.zip");
+        link.setAttribute("download", "Projet_IA_Puissance4.zip");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
 
-<script href="../JS/Logo.js"></script>
-
+    document.getElementById("downloadButton2").addEventListener("click", function () {
+        var link = document.createElement("a");
+        link.setAttribute("href", "../PROJETS/Huit_Reines.zip");
+        link.setAttribute("download", "Projet_Huit_Reines.zip");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+</script>
 </html>

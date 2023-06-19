@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio - RÉALISER</title>
-  <link rel="stylesheet" href="../CSS/Competence3.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Compétence ADMINISTRER</title>
   <link rel="stylesheet" href="../CSS/BASE.css">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="../CSS/Competence3.css">
 </head>
 
 <body>
@@ -52,19 +52,127 @@
   </nav>
 </header>
 
+<main>
+  <div class="conteneur">
+    <div class="rectangle">
+      <div class="espace">
 
 
-  <main>
+        <div class="description">
+          <h1>Administrer des systèmes informatiques</h1>
+          <hr>
+          <h2>Installer et configurer un poste de travail</h2>
+          <h3>Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures,
+            des services et des réseaux et optimiser le système informatique d’une organisation.</h3>
+          <div class="liste">
+            <p>- Identifier les différents composants (matériels et logiciels) d’un système numérique</p>
+            <p>- Utiliser les fonctionnalités de base d’un système multitâches / multiutilisateurs</p>
+            <p>- Installer et configurer un système d’exploitation et des outils de développement</p>
+            <p>- Configurer un poste de travail dans un réseau d’entreprise</p>
+          </div>
+        </div>
 
-  </main>
+        <div class="carre carre1">
+          <nav>
+            <a id="link1" href="#" onclick="showContent(1, event)" class="active-link">Générateur de PDF</a>
+            <a id="link2" href="#" onclick="showContent(2, event)">Installation de services réseau</a>
+          </nav>
+        </div>
+
+        <div class="carre carre2">
+          <div id="content1" class="content active">
+            <h1>Création d'un générateur de PDF</h1>
+            <div class="projet">
+              <h2>Description du projet :</h2>
+              <p>Ce projet a pour but de réaliser un outil capable de produire une série de PDF, et s'est
+                majoritairement appuyé sur Docker. En premier lieu, j'ai créé une page HTML/CSS qui servirait de modèle
+                pour le PDF. J'ai ensuite avec PHP, extrait des informations présentes dans des fichiers .txt, pour les
+                insérer dans ma page web. Enfin, j'ai créé un script permettant de convertir ce fichier HTML en fichier
+                PDF.</p>
+            </div>
+            <div class="ressources">
+              <h2>Ressources mobilisées :</h2>
+              <p>- Introduction à l’architecture des ordinateurs</p>
+              <p>- Introduction aux systèmes d’exploitation et à leur fonctionnement</p>
+              <p>- Anglais</p>
+              <p>- Bases de la communication</p>
+            </div>
+            <div class="outils">
+              <h2>Outils utilisés :</h2>
+              <p>- Docker</p>
+              <p>- PHP</p>
+              <p>- Bash</p>
+              <p>- HTML/CSS</p>
+            </div>
+            <div>
+              <button id="downloadButton1" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+              </button>
+            </div>
+          </div>
 
 
-  <footer>
+          <div id="content2" class="content">
+            <h1>Installation et configuration de services réseaux </h1>
+            <div class="projet">
+              <h2>Description du projet :</h2>
+              <p>Ce projet, réalisé en groupe, a pour but d'installer et de configurer des services réseau. Nous nous
+                sommes dans un premier temps familiarisé avec les modules PHP et MySQL présent dans notre machine
+                virtuelle. Puis, nous avons créé des pages web, ainsi que des pages d'erreurs. Ces pages étaient
+                présentes sur notre serveur, et nous l'avons configuré pour qu'un mot de passe soit requis pour y
+                accéder.</p>
+            </div>
+            <div class="ressources">
+              <h2>Ressources mobilisées :</h2>
+              <p>- Communication et fonctionnement bas niveau</p>
+              <p>- Introduction aux services réseaux</p>
+              <p>- Anglais</p>
+              <p>- Communication technique</p>
+            </div>
+            <div class="outils">
+              <h2>Outils utilisés :</h2>
+              <p>- Apache2</p>
+              <p>- PHP</p>
+              <p>- MySQL</p>
+              <p>- HTML</p>
+              <p>- CSS</p>
+            </div>
+            <div>
+              <button id="downloadButton2" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
-  </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
 
 </body>
+<script src="../JS/Logo.js"></script>
+<script src="../JS/MultipleColumns.js"></script>
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+<script>
+  document.getElementById("downloadButton1").addEventListener("click", function () {
+    var link = document.createElement("a");
+    link.setAttribute("href", "../PROJETS/Generateur_PDF.zip");
+    link.setAttribute("download", "Generateur_PDF.zip");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
 
-<script href="../JS/Logo.js"></script>
-
+  document.getElementById("downloadButton2").addEventListener("click", function () {
+    var link = document.createElement("a");
+    link.setAttribute("href", "../PROJETS/Services_Reseau.zip");
+    link.setAttribute("download", "Services_Reseau.zip");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
 </html>

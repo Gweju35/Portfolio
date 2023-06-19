@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio - RÉALISER</title>
-  <link rel="stylesheet" href="../CSS/Competence5.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Compétence CONDUIRE</title>
   <link rel="stylesheet" href="../CSS/BASE.css">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="../CSS/Competence5.css">
 </head>
 
 <body>
@@ -52,19 +52,127 @@
   </nav>
 </header>
 
+<main>
+  <div class="conteneur">
+    <div class="rectangle">
+      <div class="espace">
 
 
-  <main>
+        <div class="description">
+          <h1>Conduire un projet</h1>
+          <hr>
+          <h2>Identifier les besoins métiers des clients et des utilisateurs</h2>
+          <h3>Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter
+            un projet informatique avec des méthodes classiques ou agiles.</h3>
+          <div class="liste">
+            <p>- Appréhender les besoins du client et de l'utilisateur</p>
+            <p>- Mettre en place les outils de gestion de projet </p>
+            <p>- Identifier les acteurs et les différentes phases d’un cycle de développement</p>
+          </div>
+        </div>
 
-  </main>
+        <div class="carre carre1">
+          <nav>
+            <a id="link1" href="#" onclick="showContent(1, event)" class="active-link">Site internet</a>
+            <a id="link2" href="#" onclick="showContent(2, event)">Gestion d'un projet</a>
+          </nav>
+        </div>
+
+        <div class="carre carre2">
+          <div id="content1" class="content active">
+            <h1>Création d'un site internet</h1>
+            <div class="projet">
+              <h2>Description du projet :</h2>
+              <p>Ce projet, réalisé en groupe, a pour but de créer un site internet vitrine d'une association sportive.
+                Pour mener à bien ce travail, nous avons établi le recueil des besoins du client, puis conçu
+                l'arborescence du site, et nous avons défini une charte graphique permettant une bonne lisibilité. Nous
+                avons ensuite réalisé le maquettage de nos pages, adapté à différents formats de visualisation avec
+                l'outil Figma, puis programmé une version responsive avec les langages HTML et CSS. Ce travail s'est
+                majoritairement appuyé sur l'utilisation d'outils collaboratifs, tels que Git pour versionner notre
+                code.</p>
+            </div>
+            <div class="ressources">
+              <h2>Ressources mobilisées :</h2>
+              <p>- Développement d’interfaces web</p>
+              <p>- Introduction à la gestion des organisations</p>
+              <p>- Bases de la communication</p>
+            </div>
+            <div class="outils">
+              <h2>Outils utilisés :</h2>
+              <p>- Gloomaps</p>
+              <p>- Figma</p>
+              <p>- HTML</p>
+              <p>- CSS</p>
+            </div>
+            <div>
+              <button id="downloadButton1" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+              </button>
+            </div>
+          </div>
 
 
-  <footer>
+          <div id="content2" class="content">
+            <h1>Gestion d'un projet</h1>
+            <div class="projet">
+              <h2>Description du projet :</h2>
+              <p>Ce projet, réalisé en groupe, a pour but de gérer le projet de conception et de réalisation de la
+                future application de gestion des réservations d'un hôtel. Nous avons analysé les besoins de
+                l'entreprise, et rédigé un dossier de gestion de projet. Ce dossier contenait différents documents,
+                comme la Spécification des Exigences du Logiciel, et une note de cadrage. Par la suite, nous avons
+                intégré un organigramme des tâches, une matrice RACI, et une estimation des charges. Enfin, nous avons
+                ajouté un diagramme de Gantt prévisionnel, et un diagramme de Gantt réel, pour mettre en évidence la
+                différence par rapport au prévisionnel.</p>
+            </div>
+            <div class="ressources">
+              <h2>Ressources mobilisées :</h2>
+              <p>- Introduction à la gestion des systèmes d’information</p>
+              <p>- Introduction au droit</p>
+              <p>- Anglais</p>
+              <p>- Communication technique</p>
+            </div>
+            <div class="outils">
+              <h2>Outils utilisés :</h2>
+              <p>- Project Libre</p>
+              <p>- Excel</p>
+              <p>- Canva</p>
+            </div>
+            <div>
+              <button id="downloadButton2" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
-  </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
 
 </body>
-
 <script src="../JS/Logo.js"></script>
+<script src="../JS/MultipleColumns.js"></script>
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+<script>
+  document.getElementById("downloadButton1").addEventListener("click", function () {
+    var link = document.createElement("a");
+    link.setAttribute("href", "../PROJETS/Site_Internet.zip");
+    link.setAttribute("download", "Site_Internet.zip");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
 
+  document.getElementById("downloadButton2").addEventListener("click", function () {
+    var link = document.createElement("a");
+    link.setAttribute("href", "../PROJETS/Gestion_Projet.zip");
+    link.setAttribute("download", "Gestion_Projet.zip");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
 </html>

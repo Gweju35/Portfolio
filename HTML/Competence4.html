@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio - RÉALISER</title>
-  <link rel="stylesheet" href="../CSS/Competence4.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Compétence GÉRER</title>
   <link rel="stylesheet" href="../CSS/BASE.css">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="../CSS/Competence4.css">
 </head>
 
 <body>
@@ -52,19 +52,120 @@
   </nav>
 </header>
 
+<main>
+  <div class="conteneur">
+    <div class="rectangle">
+      <div class="espace">
 
 
-  <main>
+        <div class="description">
+          <h1>Gérer des données de l'information</h1>
+          <hr>
+          <h2>Concevoir et mettre en place une base de données à partir d’un cahier des charges client</h2>
+          <h3>Concevoir, gérer, administrer et exploiter les données de l’entreprise et mettre à disposition toutes les informations pour un bon pilotage de l’entreprise.</h3>
+          <div class="liste">
+            <p>- Mettre à jour et interroger une base de données relationnelle (en requêtes directes ou à travers une application)</p>
+            <p>- Visualiser des données</p>
+            <p>- Concevoir une base de données relationnelle à partir d’un cahier des charges</p>
+          </div>
+        </div>
 
-  </main>
+        <div class="carre carre1">
+          <nav>
+            <a id="link1" href="#" onclick="showContent(1, event)" class="active-link">Création d’une base de données</a>
+            <a id="link2" href="#" onclick="showContent(2, event)">Exploitation d’une base de données</a>
+          </nav>
+        </div>
+
+        <div class="carre carre2">
+          <div id="content1" class="content active">
+            <h1>Création d’une base de données</h1>
+            <div class="projet">
+              <h2>Description du projet :</h2>
+              <p>Ce projet, réalisé en binôme, a pour but de créer une base de données, en se basant sur "Les Rencontres
+                Trans Musicales de Rennes". Dans un premier temps, nous avons réalisé un diagramme de classe répondant
+                aux différentes gestions de l'événement. Nous avons ensuite traduit ce diagramme de classe vers le
+                modèle relationnel, pour enfin l'implanter en SQL.</p>
+            </div>
+            <div class="ressources">
+              <h2>Ressources mobilisées :</h2>
+              <p>- Introduction aux bases de données et SQL</p>
+              <p>- Mathématiques discrètes</p>
+              <p>- Introduction à l’économie durable et numérique</p>
+            </div>
+            <div class="outils">
+              <h2>Outils utilisés :</h2>
+              <p>- SQL</p>
+              <p>- Visual Paradigm</p>
+              <p>- MySQL Workbench</p>
+            </div>
+            <div>
+              <button id="downloadButton1" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+              </button>
+            </div>
+          </div>
 
 
-  <footer>
+          <div id="content2" class="content">
+            <h1>Exploitation d’une base de données</h1>
+            <div class="projet">
+              <h2>Description du projet :</h2>
+              <p>Ce projet, réalisé en binôme, a pour but d'exploiter une base de données. Nous nous sommes basés sur
+                les admissions avec ParcourSup dans toutes les formations de France en 2022. Nous avons dans un premier
+                temps traduit et implanter un schéma relationnel. Puis, nous avons peuplé et exploité notre base de
+                données. Pour enfin réaliser une analyse statistique des données de notre base, en effectuant une
+                régression linéaire multiple.</p>
+            </div>
+            <div class="ressources">
+              <h2>Ressources mobilisées :</h2>
+              <p>- Exploitation d’une base de données</p>
+              <p>- Outils numériques pour les statistiques descriptives</p>
+              <p>- Introduction à la gestion des systèmes d’information</p>
+              <p>- Anglais</p>
+            </div>
+            <div class="outils">
+              <h2>Outils utilisés :</h2>
+              <p>- SQL</p>
+              <p>- Python</p>
+              <p>- MySQL Workbench</p>
+            </div>
+            <div>
+              <button id="downloadButton2" class="bouton"><span><i class="fa fa-download"></i>     Download Project</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
-  </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
 
 </body>
-
 <script src="../JS/Logo.js"></script>
+<script src="../JS/MultipleColumns.js"></script>
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+<script>
+  document.getElementById("downloadButton1").addEventListener("click", function () {
+    var link = document.createElement("a");
+    link.setAttribute("href", "../PROJETS/Creation_BDD.zip");
+    link.setAttribute("download", "Creation_BDD.zip");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
 
+  document.getElementById("downloadButton2").addEventListener("click", function () {
+    var link = document.createElement("a");
+    link.setAttribute("href", "../PROJETS/Exploitation_BDD.zip");
+    link.setAttribute("download", "Exploitation_BDD.zip");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
 </html>
