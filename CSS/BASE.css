@@ -126,7 +126,6 @@ a {
 
 /*--------------- BARRE DE MENU --------------- */
 .navbar {
-    position: absolute;
     padding: 15px;
     display: flex;
     justify-content: space-between;
