@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Julien Perriguey</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="./index.js"></script>
 </head>
 
 
@@ -33,31 +34,31 @@
 <main>
     <section id="presentation">
         <div class="presentation_conteneur">
-            <img src="./IMAGES/Photo.jpg" class="Photo" alt="L'image n'est pas accessible pour le moment" title="Photo"/>
+            <div><img src="./IMAGES/Photo.jpg" class="Photo" alt="L'image n'est pas accessible pour le moment" title="Photo"/></div>
             <div class="texte">
-                <h1>— Je suis Julien Perriguey.</h1>
-                <h2>Étudiant en BUT Informatique</h2>
-                <p>Actuellement étudiant en 2nde année de BUT Informatique à l'IUT de Lannion, je suis à la recherche d'un stage en développement
+                <div><h1>— Je suis Julien Perriguey.</h1></div>
+                <div><h2>Étudiant en BUT Informatique</h2></div>
+                <div><p>Actuellement étudiant en 2nde année de BUT Informatique à l'IUT de Lannion, je suis à la recherche d'un stage en développement
                     web sur la période d'avril 2024 à juin-juillet 2024. Mes études en informatique m'ont permis d'enrichir mes compétences
                     en conception, développement multi-plateforme et base de données en m'investissant sur divers projets.
-                    De plus, j'assimile rapidement de nouvelles connaissances, et je m'adapte aisément à un nouvel environnement.</p>
+                    De plus, j'assimile rapidement de nouvelles connaissances, et je m'adapte aisément à un nouvel environnement.</p></div>
             </div>
         </div>
     </section>
 
     <div class="titre" id="titre1"><h1>Diplômes</h1></div>
     <section id="diplomes">
-        <div class="diplomes">
+        <div class="diplomes hidden_left">
             <h3>2022-AUJ. — BUT Informatique</h3>
             <p>Je suis actuellement en seconde année de BUT Informatique à l'IUT de Lannion. Pour ma troisième année d'études,
                 je souhaiterais poursuivre ma formation en alternance dans le domaine du développement web.</p>
         </div>
-        <div class="diplomes">
+        <div class="diplomes hidden_right">
             <h3>2022 — BAC Général</h3>
             <p>J'ai obtenu un Baccalauréat Général mention Bien, avec les spécialités Mathématiques, NSI, et
                 AMC (abandonnée en classe de Première), ainsi qu'une option en Section Européenne Histoire-Géographie.</p>
         </div>
-        <div class="diplomes">
+        <div class="diplomes hidden_left">
             <h3>2022 — TOEIC</h3>
             <p>J'ai obtenu la certification TOEIC, niveau B1, grâce à mon option Section Européenne, pendant mon année
                 de Terminale. Le TOEIC est un diplôme reconnu par de nombreuses entreprises multinationales et anglophones
@@ -66,9 +67,9 @@
     </section>
 
     <div class="titre" id="titre2"><h1>Expériences</h1></div>
-    <section id="experiences">
+    <section id="experiences" >
 
-        <div class="experiences">
+        <div class="experiences hidden_left">
             <h3>2023 — Ouvrier polyvalent</h3>
             <p>En juillet et août 2023, j'ai occupé le poste d'ouvrier polyvalent dans l'entreprise Salaison Bio Valeur,
                 à Louvigné-Du-Désert, pour une durée de huit semaines. J'ai réalisé la découpe de viandes et la mise
@@ -77,7 +78,7 @@
         </div>
 
 
-        <div class="experiences">
+        <div class="experiences hidden_right">
             <h3>2022 — Agent de libre-service</h3>
             <p>En juillet et août 2022, j'ai occupé en intérim le poste d'agent de libre-service dans la chaîne de
                 magasins la Foir'Fouille, à Fougères, pour une durée de cinq semaines. Polyvalent, j'ai assuré des
@@ -87,7 +88,7 @@
         </div>
 
 
-        <div class="experiences">
+        <div class="experiences hidden_left">
             <h3>2022 — Opérateur de production</h3>
             <p>En juillet 2022, j'ai occupé en intérim le poste d'opérateur de production dans l'usine de l'entreprise
                 Alliora, à Fougères, pour une durée d'une semaine et demie. J'ai effectué les tâches du travail à la
@@ -95,7 +96,7 @@
                 mon sens du travail d'équipe, ainsi que mon efficacité dans l'exécution de ces tâches.</p>
         </div>
 
-        <div class="experiences">
+        <div class="experiences hidden_right">
             <h3>2021 — <i>Opération argent de poche</i></h3>
             <p>En juillet 2021, j'ai participé à l'opération argent de poche proposée par la ville de Fougères, pour une
                 durée d'une semaine. Diverses missions me furent attribué, comme le désherbage ou le nettoyage des
@@ -108,7 +109,7 @@
     <div class="titre" id="titre3"><h1>Compétences</h1></div>
     <section id="competences">
 
-        <div class="categories">
+        <div class="categories hidden_left">
             <h1>Développement web : </h1>
             <div class="comp">
                 <button>HTML</button>
@@ -120,7 +121,7 @@
             </div>
         </div>
 
-        <div class="categories">
+        <div class="categories hidden_right">
             <h1>Base de données : </h1>
             <div class="comp">
                 <button>SQL</button>
@@ -131,7 +132,7 @@
             </div>
         </div>
 
-        <div class="categories">
+        <div class="categories hidden_left">
             <h1>Développement logiciel : </h1>
             <div class="comp">
                 <button>Java</button>
@@ -142,7 +143,7 @@
             </div>
         </div>
 
-        <div class="categories">
+        <div class="categories hidden_right">
             <h1>Systèmes d'exploitation : </h1>
             <div class="comp">
                 <button>Windows</button>
@@ -150,7 +151,7 @@
             </div>
         </div>
 
-        <div class="categories">
+        <div class="categories hidden_left">
             <h1>IDE : </h1>
             <div class="comp">
                 <button>Visual Studio Code</button>
@@ -161,14 +162,14 @@
             </div>
         </div>
 
-        <div class="categories">
+        <div class="categories hidden_right">
             <h1>Gestionnaire de codes : </h1>
             <div class="comp">
                 <button>Git</button>
             </div>
         </div>
 
-        <div class="categories">
+        <div class="categories hidden_left">
             <h1>Langues : </h1>
             <div class="comp">
                 <button>Anglais - Avancé</button>
@@ -180,7 +181,7 @@
 
     <div class="titre" id="titre4"><h1>Projets</h1></div>
     <section id="projets">
-        <div class="projet_conteneur">
+        <div class="projet_conteneur hidden_left">
             <ul>
                 <li><div class="soufflet">
                     <input type="checkbox" id="faq-0">
@@ -610,8 +611,7 @@
 
 </main>
 
-<footer>
-    <section id="contacts">
+<footer id="contacts">
         <div class="contacts">
             <a href="tel:06-06-45-59-92">06.06.45.59.92</a>
             <a href="mailto:julienprgy@gmail.com" title="Envoyez-moi un email">julienprgy@gmail.com</a>
@@ -619,7 +619,6 @@
             <a href="https://github.com/Gweju35" target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/julien-perriguey-b24540261/" target="_blank">LinkedIn</a>
         </div>
-    </section>
 </footer>
 
 

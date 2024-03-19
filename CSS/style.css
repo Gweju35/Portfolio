@@ -35,6 +35,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--main_color);
 }
@@ -52,6 +56,52 @@ h1, h2, h3 {
 p {
     font-family: var(--montserrat);
 }
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.hidden_left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%); 
+    transition : all 1s;
+}
+
+.hidden_right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%); 
+    transition : all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.experiences:nth-child(2), .diplomes:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.experiences:nth-child(3), .diplomes:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.experiences:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+
 
 /*--------------- Barre de navigation --------------- */
 .navbar {
@@ -229,6 +279,7 @@ p {
     padding: 15px;
     border-radius: var(--radius);
     border: solid 2px white;
+    width: 65vw;
 }
 
 .comp {
@@ -291,7 +342,7 @@ label::before {
 .projet {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s;
+    transition: max-height 0.8s;
 }
 
 .projet p, .projet h3 {
@@ -363,4 +414,52 @@ input:checked ~ h1 ~ .projet {
 .contacts a {
     font-family: var(--sanchez);
     font-size: 1.1em;
+}
+
+
+/* --------------- Media Queries --------------- */
+@media screen and (max-width: 640px) {
+    * {
+        color: red;
+    }
+
+    .navbar a, .contacts a {
+        font-size: 0.8em;
+    }
+
+    .presentation_conteneur {
+        display: flex;
+        align-items: flex-start;
+        width: 65vw;
+    }
+
+    .presentation_conteneur .texte {
+        align-self: center;
+    }
+
+    
+    .presentation_conteneur img {
+        flex-grow: 2;
+    }
+
+
+    .presentation_conteneur h1 {
+        font-size: 1.2rem;
+    }
+
+    .presentation_conteneur h2 {
+        font-size: 1rem;
+    }
+
+    .presentation_conteneur p {
+        font-size: 0.8rem;
+    }
+
+    .categories button {
+        margin: 5px;
+    }
+
+    .projet .bouton {
+        width: 35vw;
+    }
 }
