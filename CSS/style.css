@@ -199,7 +199,7 @@ section {
 }
 
 .presentation_conteneur img {
-    width: 25vw;
+    width: 20vw;
     border-radius: var(--radius);
 }
 
@@ -236,7 +236,7 @@ section {
 .experiences {
     background: var(--second_color);
     border: 2px solid var(--writing_color);
-    border-radius: 8px;
+    border-radius: var(--radius);
     padding: 15px;
     margin: 20px;
     width: 65vw;
@@ -278,7 +278,7 @@ section {
     margin: 10px;
     padding: 15px;
     border-radius: var(--radius);
-    border: solid 2px white;
+    border: solid 2px var(--writing_color);
     width: 65vw;
 }
 
@@ -418,11 +418,58 @@ input:checked ~ h1 ~ .projet {
 
 
 /* --------------- Media Queries --------------- */
-@media screen and (max-width: 640px) {
-    * {
-        color: red;
+
+/* 1010 rupture pour les boutons de compétences */
+/* 1000 rupture sur les boutons de téléchargement de projets */
+/* 1000 conteneur presentation + photo devient bizarre */
+
+/* 650 les titres des sections dans le header sont trop rapprochées */
+/* Faire rétrécir le logo */
+
+@media screen and (max-width: 1200px) {
+    .categories button {
+        padding: 5px;
+        font-size: 1em;
     }
 
+    .presentation_conteneur h1 {
+        font-size: 1.5em;
+    }
+    
+    .presentation_conteneur h2 {
+        font-size: 1.3em;
+    }
+    
+    .presentation_conteneur p {
+        font-size: 0.8em;
+        word-spacing: 0em;
+        letter-spacing: 0em;
+        line-height: 3.5vh;
+    }
+
+    .bouton {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+
+}
+
+/* Rupture a 1000 pour les téléchargements de projet  
+
+.bouton {
+    width: 20vw;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.bouton img {
+    height: 15px;
+    width: 15px;
+}*/
+
+/*@media screen and (max-width: 640px) {
     .navbar a, .contacts a {
         font-size: 0.8em;
     }
@@ -436,12 +483,6 @@ input:checked ~ h1 ~ .projet {
     .presentation_conteneur .texte {
         align-self: center;
     }
-
-    
-    .presentation_conteneur img {
-        flex-grow: 2;
-    }
-
 
     .presentation_conteneur h1 {
         font-size: 1.2rem;
@@ -462,4 +503,4 @@ input:checked ~ h1 ~ .projet {
     .projet .bouton {
         width: 35vw;
     }
-}
+}*/
