@@ -17,12 +17,12 @@
 /*--------------- Variables --------------- */
 :root {
     --main_color: #02B489;
-    --second_color : rgba(36, 70, 108, 0.35);
-    --writing_color : white;
-    --radius : 8px;
-    --sanchez : 'Sanchez', sans-serif;
-    --montserrat : 'Montserrat', sans-serif;
-    --familjen : 'FamiljenGrotesk', sans-serif;
+    --second_color: rgba(36, 70, 108, 0.35);
+    --writing_color: white;
+    --radius: 8px;
+    --sanchez: 'Sanchez', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --familjen: 'FamiljenGrotesk', sans-serif;
 }
 
 /*--------------- Corps de la page --------------- */
@@ -66,15 +66,15 @@ section {
 .hidden_left {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%); 
-    transition : all 1s;
+    transform: translateX(-100%);
+    transition: all 1s;
 }
 
 .hidden_right {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(100%); 
-    transition : all 1s;
+    transform: translateX(100%);
+    transition: all 1s;
 }
 
 .show {
@@ -113,7 +113,7 @@ section {
     width: 100%;
 }
 
-.navbar a, .navbar h1    {
+.navbar a, .navbar h1 {
     font-family: var(--sanchez);
     font-size: 1.1em;
 }
@@ -127,15 +127,15 @@ section {
     transition: 0.35s;
 }
 
-.button-form:hover::after{
+.button-form:hover::after {
     width: 100%;
 }
 
 /*--------------- Titres des Sections --------------- */
 .titre {
     border: 2px solid var(--writing_color);
-    border-right : none;
-    border-left : none;
+    border-right: none;
+    border-left: none;
     padding: 15px;
     margin: 25px 25px 10px 25px;
     width: 39vw;
@@ -267,7 +267,7 @@ section {
     border: solid 1.5px var(--writing_color);
     border-radius: var(--radius);
     padding: 7px;
-    margin: 0 5px;
+    margin: 5px 5px;
     font-family: var(--montserrat);
     font-size: 1.2em;
     font-weight: 600;
@@ -323,7 +323,7 @@ li {
 .soufflet h1 {
     padding: 0.7em 0.7em 1em 0;
     font-size: 1.2em;
-    letter-spacing: 0.05em;   
+    letter-spacing: 0.05em;
 }
 
 .soufflet label {
@@ -351,20 +351,20 @@ label::before {
     margin-top: 0.1vh;
     margin-bottom: 2vh;
     margin-left: 2.5vw;
-    word-spacing: 0.05em;      
+    word-spacing: 0.05em;
 }
 
 .projet h3 {
     font-weight: 200;
 }
 
-input:checked ~ h1 label::before {
+input:checked~h1 label::before {
     border-left: 0.4vw solid transparent;
     border-top: 0.4vw solid var(--writing_color);
     margin-right: 0.5vw;
 }
 
-input:checked ~ h1 ~ .projet {
+input:checked~h1~.projet {
     max-height: 150vh;
 }
 
@@ -419,9 +419,7 @@ input:checked ~ h1 ~ .projet {
 
 /* --------------- Media Queries --------------- */
 
-/* 1010 rupture pour les boutons de compétences */
-/* 1000 rupture sur les boutons de téléchargement de projets */
-/* 1000 conteneur presentation + photo devient bizarre */
+
 
 /* 650 les titres des sections dans le header sont trop rapprochées */
 /* Faire rétrécir le logo */
@@ -435,11 +433,11 @@ input:checked ~ h1 ~ .projet {
     .presentation_conteneur h1 {
         font-size: 1.5em;
     }
-    
+
     .presentation_conteneur h2 {
         font-size: 1.3em;
     }
-    
+
     .presentation_conteneur p {
         font-size: 0.8em;
         word-spacing: 0em;
@@ -452,55 +450,194 @@ input:checked ~ h1 ~ .projet {
     }
 }
 
-@media screen and (max-width: 1010px) {
 
+@media screen and (max-width: 1024px) {
+    .bouton {
+        margin-left: 15px;
+    }
+
+    .bouton span {
+        font-size: 0.7em;
+    }
+
+    .bouton img {
+        height: 12px;
+        width: 12px;
+    }
+
+    .logo-container {
+        margin-right: 5vw;
+    }
+
+    .categories h1 {
+        font-size: 1.2em;
+    }
 }
 
-/* Rupture a 1000 pour les téléchargements de projet  
+@media screen and (max-width: 768px) {
 
-.bouton {
-    width: 20vw;
-    font-size: 1em;
-    padding: 5px;
-}
-
-.bouton img {
-    height: 15px;
-    width: 15px;
-}*/
-
-/*@media screen and (max-width: 640px) {
     .navbar a, .contacts a {
         font-size: 0.8em;
     }
 
-    .presentation_conteneur {
-        display: flex;
-        align-items: flex-start;
-        width: 65vw;
+    .titre h1 {
+        font-size: 1.6em;
+    }
+
+    .soufflet h1 {
+        font-size: 1em;
+        letter-spacing: 0.05em;
+    }
+
+    .projet p, .projet h3 {
+        margin-right: 5vw;
+        font-size: 0.7em;
+    }
+
+    .bouton span {
+        font-size: 0.6em;
+    }
+
+    .bouton img {
+        height: 10px;
+        width: 10px;
     }
 
     .presentation_conteneur .texte {
-        align-self: center;
+        width: 50vw;
+        padding: 10px;
+        margin: 0 10px;
     }
 
-    .presentation_conteneur h1 {
-        font-size: 1.2rem;
+    .texte h1 {
+        font-size: 1.3em;
     }
 
-    .presentation_conteneur h2 {
-        font-size: 1rem;
+    .texte h2 {
+        font-size: 1.1em;
     }
 
-    .presentation_conteneur p {
-        font-size: 0.8rem;
+    .diplomes, .experiences {
+        padding: 10px;
+    }
+
+    .diplomes h3, .experiences h3{
+        font-size: 1em;
+        padding-bottom: 10px;
+    }
+    
+    .diplomes p, .experiences p {
+        word-spacing: 0.05em;
+        font-size: 0.8em;
+    }
+
+    .categories h1 {
+        font-size: 1.1em;
     }
 
     .categories button {
-        margin: 5px;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .bouton {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .navbar a, .contacts a {
+        font-size: 0.7em;
     }
 
-    .projet .bouton {
-        width: 35vw;
+    .logo {
+        height: 8vh;
     }
-}*/
+    
+    .logo-container {
+        margin-right: 4vw;
+    }
+
+    .logo-container h1 {
+        font-size: 0.8em;
+    }
+
+    .presentation_conteneur .texte {
+        width: 60vw;
+        padding: 7px;
+        margin: 0 5px;
+    }
+
+    .texte h1 {
+        font-size: 1em;
+    }
+
+    .texte h2 {
+        font-size: 0.9em;
+    }
+
+    .texte p {
+        font-size: 0.6em;
+    }
+
+    .categories, .diplomes, .experiences {
+        margin: 10px;
+        padding: 10px;
+        width: 70vw;
+    }
+
+    .soufflet h1 {
+        font-size: 0.8em;
+    }
+
+    .projet p, .projet h3 {
+        margin-right: 10vw;
+        font-size: 0.6em;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .navbar a, .contacts a {
+        font-size: 0.5em;
+    }
+
+    .logo {
+        height: 6vh;
+    }
+
+    .logo-container {
+        margin-right: 2vw;
+    }
+
+    .logo-container h1 {
+        font-size: 0.6em;
+    }
+
+    .presentation_conteneur .texte {
+        width: 65vw;
+        padding: 2px;
+        margin: 0 5px;
+    }
+
+    .texte h1 {
+        font-size: 0.8em;
+    }
+
+    .texte h2 {
+        font-size: 0.7em;
+    }
+
+    .texte p {
+        font-size: 0.5em;
+    }
+}
+
+
+
+
