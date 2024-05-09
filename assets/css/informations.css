@@ -1,0 +1,137 @@
+.informations-section {
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;  
+}
+
+.informations-section .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.lignes-infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -30px !important;
+}
+
+.carre {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.carre .infos {
+    box-shadow: 0px 0px 13px 0px rgba(202, 59, 59, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.carre .infos .inside {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 30px 35px;
+    border-radius: 10px;
+}
+
+.carre1 .infos .inside {
+    background-color: #6718e9;
+}
+
+.carre2 .infos .inside {
+    background-color: #d025ce;
+}
+
+.carre3 .infos .inside {
+    background-color: #e97518;
+}
+
+.carre4 .infos .inside {
+    background-color: #F83097;
+}
+
+.infos .bg_icon {
+    font-size: 160px;
+    position: absolute;
+    line-height: 1;
+    right: -30px;
+    bottom: -50px;
+    opacity: 0.3;
+}
+
+.infos .bg_icon img { 
+    width: 160px;
+    height: 160px;
+}
+
+.infos .icon {
+    line-height: 1;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.infos .icon img {
+    width: 55px;
+    height: 55px;
+}
+
+.infos h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 26px;
+    margin: 0;
+    margin-top: -2px;
+}
+
+/* ---------- Media Queries Min ---------- */
+@media (min-width: 576px) {
+    .informations-section .container {
+        max-width: 540px;
+    }
+
+    .carre {
+        max-width: 50%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .informations-section .container {
+        max-width: 720px;
+    }
+
+    .infos h5 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 992px) {
+    .informations-section .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .informations-section .container {
+        max-width: 1200px;
+    }
+
+    .carre {
+        max-width: 25%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 25%;
+    }
+}

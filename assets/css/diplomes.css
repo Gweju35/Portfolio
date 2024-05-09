@@ -1,0 +1,135 @@
+.diplomes-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diplomes-section {
+    padding-top: 100px;
+}
+
+.diplomes-part {
+    margin-bottom: -30px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+    .diplome {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.diplome {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.diplome-item {
+    background: url(../images/diplome-content.png) #272440 repeat-y left center;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0.314px 5.992px 4.2px 0.8px rgba(116, 35, 247, 0.04);
+    border-radius: 5px;
+    margin: 0 auto 30px;
+}
+
+.diplome-item .title {
+    margin-bottom: 16px;
+}
+
+.diplome-item .title {
+    margin-bottom: 16px;
+}
+
+.diplome-item h5 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+.diplome-item p {
+    margin-top: -10px;
+    margin-bottom: -7px !important;
+}
+
+
+
+/* ---------- Media Queries Min ---------- */
+@media (min-width: 576px) {
+    .diplomes-container {
+        max-width: 540px;
+    }
+
+    .title-section .title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: -5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .diplomes-container {
+        max-width: 720px;
+    }
+
+    .title-section .title {
+        font-size: 60px;
+        line-height: 70px;
+        margin-top: -6px;
+    }
+
+    .diplome-item h5 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: -2px;
+    }
+}
+
+@media (min-width: 992px) {
+    .diplomes-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .diplomes-container {
+        max-width: 1200px;
+    }
+}
+
+
+/* ---------- Media Queries Max ---------- */
+@media (max-width: 1200px) {
+    .diplome:nth-child(2) .diplome-item {
+        height: 285px;
+    }
+}
+
+@media (max-width: 991px) {
+    .diplome:nth-child(2) .diplome-item {
+        height: 405px;
+    }
+
+    .diplome-item p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .diplome:nth-child(2) .diplome-item {
+        height: auto;
+    }
+}

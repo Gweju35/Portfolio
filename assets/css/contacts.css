@@ -1,0 +1,165 @@
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    background: #201D3A;
+    padding: 15px 0 15px;
+    margin: 0;
+}
+
+.footer-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.title-footer {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.title-footer h2 {
+    padding: 25px 0 20px;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: -5px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.title-footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    height: 1px;
+    background: #08D565;
+}
+
+.title-footer h2::after {
+    position: absolute;
+    content: "";
+    right: -100px;
+    left: 0;
+    top: 0;
+    background: #201D3A;
+    bottom: 0;
+}
+
+.title-footer h2 span {
+    position: relative;
+    z-index: 2;
+    text-transform: capitalize;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0 100px;
+}
+
+.part2 {
+    justify-self: center;
+}
+
+.part3 {
+    justify-self: end;
+}
+
+/* Nom des moyens de contact */
+.footer-infos .contact-name {
+    font-weight: 600;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    transition: all ease 0.3s;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Conteneur du cercle des icônes des contacts */
+.footer-infos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+/* Cercle des icônes des contacts */
+.footer-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #2D2A4A;
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+    box-shadow: none;
+    transition: all .2s ease-in-out;
+}
+
+/* Icônes des contacts */
+.footer-icon i {
+    font-size: 30px;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+/* ---------- Media Queries Max ---------- */
+@media (max-width: 991px) {
+    .contact-container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-part {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-infos {
+        width: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-part {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 426px) {
+    .title-footer::before{
+        content: none;
+    }
+
+    .title-footer h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 321px) {
+    .footer-infos .contact-name {
+        font-size: unset;
+    }
+}

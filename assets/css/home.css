@@ -1,0 +1,345 @@
+/* section présentation */
+.home-section {
+    padding: 290px 0 290px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* image de fond */
+.bg_img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* traits verticaux en fond */
+.home-shape {
+    position: absolute;
+    top: 0;
+    left: 14%;
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.home-shape::before, .home-shape::after {
+    width: 1px;
+    height: 30px;
+}
+
+.home-shape::before {
+    background: #ffffff;
+    position: absolute;
+    content: "";
+}
+
+.home-shape::after {
+    background: #08D565;
+    position: absolute;
+    content: "";
+}
+
+.home-shape.shape-2 {
+    left: 30%;
+}
+
+.home-shape.shape-3 {
+    left: 42%;
+}
+
+.home-shape.shape-4 {
+    left: 56%;
+}
+
+.home-shape.shape-5 {
+    left: 70%;
+}
+
+.home-shape.shape-6 {
+    left: 84%;
+}
+
+/* Animation des traits verticaux */
+@keyframes topToBottom {
+    0% {
+        top: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        top: 100%;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes bottomToTop {
+    0% {
+        bottom: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        bottom: 100%;
+        transform: translateY(-100%);
+    }
+}
+
+/* Animation des traits verticaux bas vers le haut */
+.home-shape:nth-of-type(odd)::before {
+    animation: 13s linear bottomToTop infinite; 
+}
+
+/* Animation des traits verticaux haut vers le bas */
+.home-shape:nth-of-type(odd)::after {
+    animation: 15s linear topToBottom infinite; 
+}
+
+/* Animation des traits verticaux haut vers le bas */
+.home-shape:nth-of-type(even)::before {
+    animation: 13s linear topToBottom infinite; 
+}
+
+/* Animation des traits verticaux bas vers le haut */
+.home-shape:nth-of-type(even)::after {
+    animation: 15s linear bottomToTop infinite; 
+}
+
+/* container du contenu : nom + image */
+.home-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* conteneur du nom */
+.home-content {
+    position: relative;
+    max-width: 500px;
+}
+
+/* nom */
+.home-content .title {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 93px;
+    line-height: 96px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.home-content .title span {
+    color: #08D565;
+    display: block;
+}
+
+/* image */
+.home-image {
+    position: absolute;
+    bottom: 475px;
+    left: 55%;
+}
+
+.home-image img {
+    border-style: none;
+    vertical-align: middle;
+    z-index: 2;
+    width: 500px;
+}
+
+/* contour de la photo */
+.topLeft, .bottomRight {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid 3px #08D565;
+    border-radius: 10px;
+    z-index: 1;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+/* contour haut gauche */
+.topLeft {
+    border-left: none;
+    border-top: none;
+    left: 20px;
+    top: 20px;
+}
+
+/* contour bas droite */
+.bottomRight {
+    border-bottom: none;
+    border-right: none;
+    right: 20px;
+    top: -20px;
+}
+
+/* texte de présentation */
+.home-situation {
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px dotted rgba(255, 255, 255, 0.2);
+    background: #201D3A;
+    top: 160px;
+}
+
+.home-situation p {
+    font-size: 22px;
+    color: #ddd;
+    line-height: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+.home-situation span {
+    color: #08D565;
+}
+
+/* ---------- Media Queries Min ---------- */
+@media (min-width: 576px) {
+    .home-container {
+        max-width: 590px;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-container {
+        max-width: 1200px;
+    }
+}
+
+
+/* ---------- Media Queries Max ---------- */
+@media (max-width: 1200px) {
+    .home-content .title {
+        font-size: 73px;
+        line-height: 80px;
+    }
+
+    .home-situation {
+        top: 200px;
+    }
+
+    .home-image {
+        left: 50%;
+    }
+
+    .home-image img {
+        width: 450px;
+    } 
+}
+
+@media (max-width: 991px) {
+
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-content {
+        width: 991px;
+        max-width: none;
+        margin-bottom: 70px;
+        align-self: flex-start;
+    }
+
+    .home-content .title {
+        font-size: 70px;
+    }
+
+    .home-section {
+        padding: 190px 0 250px;
+    }
+
+    .home-image {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    .home-image img {
+        width: 550px;
+    }
+
+    .home-situation {
+        top: 110px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-content {
+        width: auto;
+    }
+
+    .home-content .title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .topLeft, .bottomRight {
+        display: none;
+    }
+
+    .home-image img {
+        border: solid 3px #08D565;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .home-situation p {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 575px) {
+    .home-image img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .home-image img {
+        width: 350px;
+    }
+
+    .home-situation {
+        top: 90px;
+    }
+}
+
+@media (max-width: 375px) { 
+    .home-content .title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .home-situation p {
+        line-height: 25px;
+    }
+
+    .home-image img {
+        width: 300px;
+    }
+}

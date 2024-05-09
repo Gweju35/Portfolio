@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Corps de la page */
+body {
+    background-color: #191634;
+    overflow-x: hidden;
+    color: #ddd;
+    font-family: "Open sans", sans-serif;
+    line-height: 30px;
+}
+
+/* Barre de scroll */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(221, 221, 221, 0.1); /* couleur d'arrière-plan de la barre de défilement */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #08d565; /* couleur de la barre de défilement */
+    border-radius: 5px;
+}
+
+header {
+    display: block;
+}
+
+/* Effet d'ombre quand le menu burger est ouvert */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all ease 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Titre des sections */
+.title-section {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 75px;
+}
+
+.title-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    height: 1px;
+    background: #2B2844;
+}
+
+.title-section .title {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    padding: 25px 0 20px;
+    font-size: 36px;
+    line-height: 46px;
+    margin-top: -5px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.title-section .title::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 65px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: #272440;
+}
+
+.title-section .title::after {
+    position: absolute;
+    content: "";
+    right: -150px;
+    left: 0;
+    top: 0;
+    background: #191634;
+    bottom: 0;
+}
+
+.title-section .title .shape {
+    color: #08D565;
+}
+
+.title-section .title span {
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- Media Queries Max ---------- */
+@media (max-width: 991px) {
+    .title-section {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width:575px) {
+    .title-section {
+        margin-bottom: 50px;
+    }
+}

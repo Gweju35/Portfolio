@@ -1,0 +1,128 @@
+.experiences-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experiences-section {
+    display: block;
+    padding-top: 100px;
+}
+
+.experiences-part {
+    margin-bottom: -30px !important;
+}
+
+.experiences-items {
+    display: flex;
+    flex-wrap: wrap;
+    background: #272440;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.experiences-image {
+    background: #201D3A;
+    width: 315px;
+    border-radius: 10px 0 0 10px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiences-image img {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    background: #ddd;
+    border-radius: 100%;
+}
+
+.experiences-description {
+    width: calc(100% - 315px);
+    border-radius: 0 10px 10px 0;
+    padding: 40px 50px;
+}
+
+.experiences-description .poste {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -4px;
+}
+
+.experiences-description p {
+    font-size: 16px;
+}
+
+/* ---------- Media Queries Min ---------- */
+@media (min-width: 576px) {
+    .experiences-container {
+        max-width: 540px;
+    }
+
+    .title-section .title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: -5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .experiences-container {
+        max-width: 720px;
+    }
+
+    .title-section .title {
+        font-size: 60px;
+        line-height: 70px;
+        margin-top: -6px;
+    }
+
+    .experiences-description .poste {
+        font-size: 28px;
+        line-height: 38px;
+        margin-top: -5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .experiences-section {
+        padding-top: 120px;
+    }
+
+    .experiences-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .experiences-container {
+        max-width: 1200px;
+    }
+}
+
+
+
+/* ---------- Media Queries Max ---------- */
+@media (max-width: 767px) {
+    .experiences-image {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .experiences-description {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        padding: 40px 30px;
+    }
+}

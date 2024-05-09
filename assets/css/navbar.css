@@ -1,0 +1,202 @@
+/* header de la page */
+.header-section {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 15px;
+    z-index: 99;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+/* header de la page actif (dès qu'on scroll) */
+.header-section.active {
+    top: 0;
+    background: #191634;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* container du header */
+.header-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+/* wrapper du header */
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+/* logo */
+.header-wrapper .logo {
+    width: auto;
+}
+
+.header-wrapper .logo a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-wrapper .logo a h1 {
+    color: #07D464;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* image du logo */
+.header-wrapper .logo img {
+    width: 50px;
+    height: 60px;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+/* menu */
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-left: auto !important;
+}
+
+/* liste du menu */
+.menu li {
+    padding: 0;
+    list-style: none;
+}
+
+/* lien du menu */
+.menu li a {
+    padding: 5px 15px;
+    font-weight: 600px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* menu burger */
+.header-burger {
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+}
+
+/* barres pour le menu burger */
+.header-burger span {
+    position: absolute;
+    display: inline-block;
+    height: 3px;
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    left: 0;
+}
+
+/* 1ere barre */
+.header-burger span:first-child {
+    top: 0;
+}
+
+/* 2eme barre */
+.header-burger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 3eme barre */
+.header-burger span:last-child {
+    bottom: 0;
+}
+
+.header-burger.active span:first-child {
+    transform: rotate(45deg) translate(3px, 9px);
+}
+
+.header-burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.header-burger.active span:last-child {
+    transform: rotate(-45deg) translate(3px, -9px);
+}
+
+/* ---------- Media Queries Min ---------- */
+@media (min-width: 576px) {
+    .header-container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-container {
+        max-width: 960px;
+    }
+
+    .header-burger {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-container {
+        max-width: 1200px;
+    }
+}
+
+/* ---------- Media Queries Max ---------- */
+@media (max-width: 991px) {
+    .menu {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 9;
+        background: #272440;
+        overflow: auto;
+        max-height: calc(100vh - 100px);
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+        -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        transform: scaleY(0);
+        transform-origin: top;
+        display: block;
+    }
+
+    .menu.active {
+        transform: scaleY(1);
+    }
+
+    .menu li {
+        padding: 0;
+        border-bottom: 1px solid transparent;
+    }
+
+    .menu li a {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 5px 20px;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+}
