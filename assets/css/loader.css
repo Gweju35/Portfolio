@@ -1,0 +1,202 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #191634;
+    z-index: 999;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    color: #08d565;
+    text-align: center;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 20px;
+}
+
+/* ------------------------ *\
+    Loader Quart de cercle
+\* ------------------------ */
+.loader-quart {
+    border-radius: 50px;
+    border: solid 6px #191634;
+}
+
+.loader-quart::after {
+    content: "";
+    position: absolute;
+    top: -6px; /* bordure de 6px donc -6px */
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: solid 6px transparent;
+    border-top-color: #08d565;
+    animation: spin 0.6s linear infinite;
+}
+
+/* ------------------------ *\
+    Loader Double cercle
+\* ------------------------ */
+.loader-double {
+    border-radius: 50px;
+    border: solid 6px transparent;
+    border-top-color: #08d565;
+    border-bottom-color: #08d565;
+    animation: spin 1s linear infinite;
+}
+
+.loader-double::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: solid 6px transparent;
+    border-top-color: #08d565;
+    border-bottom-color: #08d565;
+    opacity: 0.6;
+    animation: spinreverse 2s linear infinite;
+}
+
+/* .loader-double::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50px;
+    border: solid 3px transparent;
+    border-top-color: #08d565;
+    border-bottom-color: #08d565;
+    opacity: 0.6;
+    animation: spinreverse 5s linear infinite;
+} */
+
+/* ------------------------ *\
+    Loader Cercles Multiple
+\* ------------------------ */
+.loader-circles {
+    border-radius: 50px;
+    border: solid 3px transparent;
+    border-top-color: #08d565;
+    animation: spin 1s linear infinite;
+}
+
+.loader-circles::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: solid 3px transparent;
+    border-top-color: #08d565;
+    opacity: 0.8;
+    animation: spin 5s linear infinite;
+}
+
+.loader-circles::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 50px;
+    border: solid 3px transparent;
+    border-top-color: #08d565;
+    opacity: 0.5;
+    animation: spin 10s linear infinite;
+}
+
+/* ------------------------ *\
+        Loader Barres
+\* ------------------------ */
+.loader-bars::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 30px;
+    background-color: #08d565;
+    animation: grow 1s linear infinite;
+}
+
+.loader-bars::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 10px;
+    height: 30px;
+    background-color: #08d565;
+    animation: grow 1s linear -.33s infinite;
+}
+
+.loader-bars span {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 10px;
+    height: 30px;
+    background-color: #08d565;
+    animation: grow 1s linear -.66s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinreverse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+}
