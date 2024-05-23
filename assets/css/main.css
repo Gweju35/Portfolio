@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --side-color: #08d565; 
+    --side-color-rgb: 8, 213, 101;
+}
+
 /* Corps de la page */
 body {
     background-color: #191634;
@@ -27,7 +32,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #08d565; /* couleur de la barre de défilement */
+    background-color: var(--side-color); /* couleur de la barre de défilement */
     border-radius: 5px;
 }
 
@@ -107,7 +112,7 @@ header {
 }
 
 .title-section .title .shape {
-    color: #08D565;
+    color: var(--side-color);
 }
 
 .title-section .title span {

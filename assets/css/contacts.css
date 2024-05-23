@@ -43,7 +43,7 @@ footer {
     right: 0;
     bottom: 50%;
     height: 1px;
-    background: #08D565;
+    background: var(--side-color);
 }
 
 .title-footer h2::after {

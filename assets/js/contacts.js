@@ -6,11 +6,11 @@ footerInfos.forEach(info => {
     const contactName = info.querySelector('.contact-name'); /* Le nom du contact */
     
     footerIcon.addEventListener('mouseover', () => {
-        footerIcon.style.backgroundColor = '#08D565';
+        footerIcon.style.backgroundColor = 'var(--side-color)';
         footerIcon.style.border = '1px solid white';
         footerIcon.style.boxShadow = '0 0 0 1px #fff';
         icon.style.fontSize = '40px';
-        contactName.style.color = '#08D565';
+        contactName.style.color = 'var(--side-color)';
     });
 
     footerIcon.addEventListener('mouseout', () => {
@@ -22,11 +22,11 @@ footerInfos.forEach(info => {
     });
 
     contactName.addEventListener('mouseover', () => {
-        footerIcon.style.backgroundColor = '#08D565';
+        footerIcon.style.backgroundColor = 'var(--side-color)';
         footerIcon.style.border = '1px solid white';
         footerIcon.style.boxShadow = '0 0 0 1px #fff';
         icon.style.fontSize = '40px';
-        contactName.style.color = '#08D565';
+        contactName.style.color = 'var(--side-color)';
     });
 
     contactName.addEventListener('mouseout', () => {

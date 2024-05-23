@@ -12,7 +12,7 @@
     z-index: 999;
     font-family: "Josefin Sans", sans-serif;
     font-size: 40px;
-    color: #08d565;
+    color: var(--side-color);
     text-align: center;
 }
 
@@ -42,7 +42,7 @@
     right: -6px;
     border-radius: 50px;
     border: solid 6px transparent;
-    border-top-color: #08d565;
+    border-top-color: var(--side-color);
     animation: spin 0.6s linear infinite;
 }
 
@@ -52,8 +52,8 @@
 .loader-double {
     border-radius: 50px;
     border: solid 6px transparent;
-    border-top-color: #08d565;
-    border-bottom-color: #08d565;
+    border-top-color: var(--side-color);
+    border-bottom-color: var(--side-color);
     animation: spin 1s linear infinite;
 }
 
@@ -66,8 +66,8 @@
     right: 5px;
     border-radius: 50px;
     border: solid 6px transparent;
-    border-top-color: #08d565;
-    border-bottom-color: #08d565;
+    border-top-color: var(--side-color);
+    border-bottom-color: var(--side-color);
     opacity: 0.6;
     animation: spinreverse 2s linear infinite;
 }
@@ -81,8 +81,8 @@
     right: 15px;
     border-radius: 50px;
     border: solid 3px transparent;
-    border-top-color: #08d565;
-    border-bottom-color: #08d565;
+    border-top-color: var(--side-color);
+    border-bottom-color: var(--side-color);
     opacity: 0.6;
     animation: spinreverse 5s linear infinite;
 } */
@@ -93,7 +93,7 @@
 .loader-circles {
     border-radius: 50px;
     border: solid 3px transparent;
-    border-top-color: #08d565;
+    border-top-color: var(--side-color);
     animation: spin 1s linear infinite;
 }
 
@@ -106,7 +106,7 @@
     right: 5px;
     border-radius: 50px;
     border: solid 3px transparent;
-    border-top-color: #08d565;
+    border-top-color: var(--side-color);
     opacity: 0.8;
     animation: spin 5s linear infinite;
 }
@@ -120,7 +120,7 @@
     right: 12px;
     border-radius: 50px;
     border: solid 3px transparent;
-    border-top-color: #08d565;
+    border-top-color: var(--side-color);
     opacity: 0.5;
     animation: spin 10s linear infinite;
 }
@@ -136,7 +136,7 @@
     top: 0;
     width: 10px;
     height: 30px;
-    background-color: #08d565;
+    background-color: var(--side-color);
     animation: grow 1s linear infinite;
 }
 
@@ -148,7 +148,7 @@
     top: 0;
     width: 10px;
     height: 30px;
-    background-color: #08d565;
+    background-color: var(--side-color);
     animation: grow 1s linear -.33s infinite;
 }
 
@@ -160,7 +160,7 @@
     top: 0;
     width: 10px;
     height: 30px;
-    background-color: #08d565;
+    background-color: var(--side-color);
     animation: grow 1s linear -.66s infinite;
 }
 

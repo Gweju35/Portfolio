@@ -34,7 +34,7 @@
 }
 
 .home-shape::after {
-    background: #08D565;
+    background: var(--side-color);
     position: absolute;
     content: "";
 }
@@ -132,7 +132,7 @@
 }
 
 .home-content .title span {
-    color: #08D565;
+    color: var(--side-color);
     display: block;
 }
 
@@ -155,7 +155,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border: solid 3px #08D565;
+    border: solid 3px var(--side-color);
     border-radius: 10px;
     z-index: 1;
     border-bottom-left-radius: 0px;
@@ -200,7 +200,7 @@
 }
 
 .home-situation span {
-    color: #08D565;
+    color: var(--side-color);
 }
 
 /* ---------- Media Queries Min ---------- */
@@ -303,7 +303,7 @@
     }
 
     .home-image img {
-        border: solid 3px #08D565;
+        border: solid 3px var(--side-color);
         border-radius: 10px;
         padding: 20px;
     }

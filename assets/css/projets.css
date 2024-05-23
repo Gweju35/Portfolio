@@ -31,7 +31,7 @@
 }
 
 .projets-menu::-webkit-scrollbar-thumb {
-    background-color: #08d565; /* couleur de la barre de défilement */
+    background-color: var(--side-color); /* couleur de la barre de défilement */
     border-radius: 5px;
 }
 
@@ -65,8 +65,9 @@
     display: block;
 }
 
-.projets-list .active_li span, .projets-list li span:hover {
-    color: #08d565;
+.projets-list .active_li span, 
+.projets-list li span:hover {
+    color: var(--side-color);
 }
 
 .projets-content {
@@ -151,7 +152,7 @@
     display: flex;
     align-items: center;
     border-radius: 20px;
-    background-color: rgba(8, 213, 101, 0.8);
+    background-color: rgba(var(--side-color-rgb), 0.8);
     padding-left: .75rem;
     padding-right: .75rem;
     padding-top: .25rem;
@@ -179,8 +180,8 @@
 }
 
 .item .button:hover {
-    background-color: rgba(8, 213, 101, 1);
-    border: 1px solid #08d565;
+    background-color: rgba(var(--side-color-rgb), 1);
+    border: 1px solid var(--side-color);
 }
 
 /* ---------- Media Queries Min ---------- */
