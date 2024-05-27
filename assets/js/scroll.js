@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Permet de remonter en haut de la page en cliquant sur le bouton sans modifier l'URL
 document.addEventListener('DOMContentLoaded', function () {
     var goTopLink = document.querySelector('.goTop');
     if (goTopLink) {
