@@ -140,7 +140,7 @@
 .home-image {
     position: absolute;
     bottom: 475px;
-    left: 55%;
+    left: 52%;
 }
 
 .home-image img {
@@ -203,6 +203,12 @@
     color: var(--side-color);
 }
 
+.home-situation a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--side-color);
+}
+
 /* ---------- Media Queries Min ---------- */
 @media (min-width: 576px) {
     .home-container {
@@ -241,7 +247,7 @@
     }
 
     .home-image {
-        left: 50%;
+        left: 49%;
     }
 
     .home-image img {

@@ -46,10 +46,6 @@
     margin-bottom: 16px;
 }
 
-.diplome-item .title {
-    margin-bottom: 16px;
-}
-
 .diplome-item h5 {
     font-size: 20px;
     line-height: 26px;
@@ -59,10 +55,15 @@
     font-family: "Josefin Sans", sans-serif;
 }
 
-
 .diplome-item p {
     margin-top: -10px;
     margin-bottom: -7px !important;
+}
+
+.diplome-item a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--side-color);
 }
 
 
