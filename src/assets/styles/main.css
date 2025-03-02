@@ -1,0 +1,132 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Cors de la page */
+body {
+    @apply bg-pf-darkblue font-sans overflow-x-hidden text-[#dddddd] leading-8;
+}
+
+/* Barre de scroll */
+body::-webkit-scrollbar {
+    @apply w-3;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(221, 221, 221, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+    @apply bg-pf-green rounded;
+}
+
+/* Navbar */
+@media (max-width: 1024px) {
+    .menu {
+        @apply w-full absolute top-full left-0 z-10 bg-[#272440] overflow-auto block transition-all duration-300 ease-linear scale-y-0 origin-top;
+        max-height: calc(100vh - 100px);
+    }
+
+    .menu.active {
+        @apply scale-y-100;
+    }
+
+    .menu li {
+        @apply border-b border-transparent container;
+    }
+
+    .menu li a {
+        @apply flex justify-between border-b border-white border-opacity-10 py-1.5 px-5 text-base uppercase;
+    }
+}
+
+.burger.active span:first-child {
+    transform: rotate(45deg) translate(3px, 9px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:last-child {
+    transform: rotate(-45deg) translate(3px, -9px);
+}
+
+header.active {
+    @apply bg-pf-darkblue top-0 border-b border-white border-opacity-10;
+}
+
+.homeHeader {
+    background-image: url("~@/assets/images/home_background.jpg");
+}
+
+.degreeBackground {
+    background: url("~@/assets/images/degree_background.png") #272440 repeat-y left center;
+}
+
+.overlay {
+    @apply hidden w-full h-full fixed top-0 left-0 z-40 bg-black bg-opacity-70 transition-all duration-300 ease-linear invisible opacity-0;
+}
+
+.overlay.active {
+    @apply block visible opacity-100;
+}
+
+li i {
+    @apply !text-2xl;
+}
+
+.degreeDescription a, .jobDescription a {
+    @apply transition-all ease-in-out duration-300 no-underline;
+}
+
+.degreeDescription a:hover, .jobDescription a:hover {
+    @apply underline;
+}
+
+.skillIcon svg {
+    @apply size-8 sm:size-9 lg:size-12;
+}
+
+
+.backToTop {
+    @apply fixed z-40 bottom-5 left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-pf-darkblue border-2 border-pf-green font-semibold font-josefin flex items-center justify-center cursor-pointer transition-all ease-in-out duration-300 overflow-hidden opacity-0 pointer-events-none;
+}
+
+.backToTop.active {
+    @apply pointer-events-auto opacity-100;
+}
+
+.svgIcon {
+    @apply w-3 duration-300;
+}
+
+.svgIcon path {
+    @apply fill-pf-green;
+}
+
+.backToTop:hover {
+    @apply w-36 rounded-full duration-300 bg-pf-green items-center;
+}
+
+.backToTop:hover .svgIcon {
+    @apply duration-300 translate-y-[-200%];
+}
+
+.backToTop::before {
+    @apply absolute -bottom-5 text-white text-[0px];
+    content: "Revenir en haut";
+}
+
+.backToTop:hover::before {
+    @apply text-base opacity-100 bottom-[unset] duration-300;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh; /* Bloquer complètement le défilement */
+}

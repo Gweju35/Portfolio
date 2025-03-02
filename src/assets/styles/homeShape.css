@@ -1,0 +1,76 @@
+.homeShape {
+    @apply absolute top-0 left-[14%] w-px h-full bg-white bg-opacity-10;
+}
+
+.homeShape::before {
+    @apply bg-white absolute content-[""] w-px h-7;
+}
+
+.homeShape::after {
+    @apply bg-pf-green absolute content-[""] w-px h-7;
+}
+
+.homeShape.shape-2 {
+    @apply left-[30%];
+}
+
+.homeShape.shape-3 {
+    @apply left-[42%];
+}
+
+.homeShape.shape-4 {
+    @apply left-[56%];
+}
+
+.homeShape.shape-5 {
+    @apply left-[70%];
+}
+
+.homeShape.shape-6 {
+    @apply left-[84%];
+}
+
+/* Animation des traits verticaux */
+@keyframes topToBottom {
+    0% {
+        top: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        top: 100%;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes bottomToTop {
+    0% {
+        bottom: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        bottom: 100%;
+        transform: translateY(-100%);
+    }
+}
+
+/* Animation des traits verticaux bas vers le haut */
+.homeShape:nth-of-type(odd)::before {
+    animation: 13s linear bottomToTop infinite;
+}
+
+/* Animation des traits verticaux haut vers le bas */
+.homeShape:nth-of-type(odd)::after {
+    animation: 15s linear topToBottom infinite;
+}
+
+/* Animation des traits verticaux haut vers le bas */
+.homeShape:nth-of-type(even)::before {
+    animation: 13s linear topToBottom infinite;
+}
+
+/* Animation des traits verticaux bas vers le haut */
+.homeShape:nth-of-type(even)::after {
+    animation: 15s linear bottomToTop infinite;
+}

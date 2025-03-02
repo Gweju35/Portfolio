@@ -1,0 +1,22 @@
+{
+  "degrees": [
+    {
+      "id": 1,
+      "year": "2022-AUJ.",
+      "title": "BUT Informatique",
+      "text": "Je suis actuellement en 3ème année de BUT Informatique parcours réalisation d'applications à l'IUT de Lannion. J'occupe le poste de développeur web en alternance dans l'entreprise <a href=\"https://cobalt-studio.fr/\" target=\"_blank\" class=\"font-bold underline text-pf-green\">Cobalt Studio</a> à Rennes."
+    },
+    {
+      "id": 2,
+      "year": "2022",
+      "title": "BAC Général",
+      "text": "J'ai obtenu un Baccalauréat Général mention Bien, avec les spécialités Mathématiques et Numériques & Sciences Informatiques, ainsi qu'une option en Section Européenne Histoire-Géographie."
+    },
+    {
+      "id": 3,
+      "year": "2022",
+      "title": "TOEIC",
+      "text": "J'ai obtenu la certification TOEIC niveau B1, grâce à mon option Section Européenne pendant mon année de Terminale. Le TOEIC est un diplôme reconnu par de nombreuses entreprises multinationales et anglophones à travers le monde."
+    }
+  ]
+}

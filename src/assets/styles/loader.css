@@ -1,0 +1,120 @@
+.preloader {
+    @apply fixed top-0 left-0 w-full h-full flex flex-wrap justify-center items-center bg-pf-darkblue z-50 font-josefin text-4xl text-pf-green text-center;
+}
+
+.loader {
+    @apply w-12 h-12 inline-block align-middle relative mr-5;
+}
+
+/* ------------------------ *\
+    Loader Quart de cercle
+\* ------------------------ */
+.loader-quart {
+    @apply rounded-full border-[6px] border-pf-darkblue;
+}
+
+.loader-quart::after {
+    @apply content-[""] absolute -top-1.5 -left-1.5 -bottom-1.5 -right-1.5 rounded-full border-[6px] border-transparent border-t-pf-green;
+    animation: spin 0.6s linear infinite;
+}
+
+/* ------------------------ *\
+    Loader Double cercle
+\* ------------------------ */
+.loader-double {
+    @apply rounded-full border-[6px] border-transparent border-t-pf-green border-b-pf-green;
+    animation: spin 1s linear infinite;
+}
+
+.loader-double::after {
+    @apply content-[""] absolute top-1 bottom-1 left-1 right-1 rounded-full border-[6px] border-transparent border-t-pf-green border-b-pf-green opacity-60;
+    animation: spinreverse 2s linear infinite;
+}
+
+/* .loader-double::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50px;
+    border: solid 3px transparent;
+    border-top-color: var(--side-color);
+    border-bottom-color: var(--side-color);
+    opacity: 0.6;
+    animation: spinreverse 5s linear infinite;
+} */
+
+/* ------------------------ *\
+    Loader Cercles Multiple
+\* ------------------------ */
+.loader-circles {
+    @apply rounded-full border-[3px] border-transparent border-t-pf-green;
+    animation: spin 1s linear infinite;
+}
+
+.loader-circles::after {
+    @apply content-[""] absolute top-1 bottom-1 left-1 right-1 rounded-full border-[3px] border-transparent border-t-pf-green opacity-80;
+    animation: spin 5s linear infinite;
+}
+
+.loader-circles::before {
+    @apply content-[""] absolute top-3 bottom-3 left-3 right-3 rounded-full border-[3px] border-transparent border-t-pf-green opacity-50;
+    animation: spin 10s linear infinite;
+}
+
+/* ------------------------ *\
+        Loader Barres
+\* ------------------------ */
+.loader-bars::before {
+    @apply content-[""] absolute left-0 top-0 w-2.5 h-7 bg-pf-green;
+    animation: grow 1s linear infinite;
+}
+
+.loader-bars::after {
+    @apply content-[""] absolute left-4 top-0 w-2.5 h-7 bg-pf-green;
+    animation: grow 1s linear -.33s infinite;
+}
+
+.loader-bars span {
+    @apply content-[""] block absolute left-8 top-0 w-2.5 bg-pf-green;
+    animation: grow 1s linear -.66s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinreverse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+}

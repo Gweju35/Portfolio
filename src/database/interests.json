@@ -1,0 +1,28 @@
+{
+  "interests": [
+    {
+      "id": 1,
+      "color": "#6718e9",
+      "title": "Football",
+      "img": "football"
+    },
+    {
+      "id": 2,
+      "color": "#d025ce",
+      "title": "Films & Séries",
+      "img": "movies"
+    },
+    {
+      "id": 3,
+      "color": "#e97518",
+      "title": "Mangas & Comics",
+      "img": "books"
+    },
+    {
+      "id": 4,
+      "color": "#F83097",
+      "title": "Jeux Vidéos",
+      "img": "videogames"
+    }
+  ]
+}

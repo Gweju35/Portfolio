@@ -1,0 +1,23 @@
+.titleSection {
+    @apply relative overflow-hidden mb-12 sm:mb-16 lg:mb-20;
+}
+
+.titleSection::before {
+    @apply content-[""] absolute left-0 right-0 bottom-1/2 h-px bg-[#2B2844];
+}
+
+.titleSection h2 {
+    @apply inline-block m-0 relative pt-6 pb-5 text-4xl font-bold font-josefin sm:text-[40px] sm:leading-[50px] sm:-mt-1 md:text-6xl md:leading-[70px] md:-mt-1.5;
+}
+
+.titleSection h2::before {
+    @apply content-[""] absolute h-full w-16 left-0 top-0 z-10 bg-[#272440];
+}
+
+.titleSection h2::after {
+    @apply content-[""] absolute -right-36 left-0 top-0 bottom-0 bg-pf-darkblue;
+}
+
+.titleSection h2 span {
+    @apply text-pf-green relative z-10;
+}

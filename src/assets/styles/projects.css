@@ -1,0 +1,72 @@
+.projectMenu::-webkit-scrollbar {
+    @apply w-1;
+}
+
+.projectMenu::-webkit-scrollbar-track {
+    background: rgba(221, 221, 221, 0.1); /* couleur d'arrière-plan de la barre de défilement */
+}
+
+.projectMenu::-webkit-scrollbar-thumb {
+    @apply bg-pf-green rounded;
+}
+
+.projectMenu {
+    @apply max-lg:overflow-visible max-lg:h-auto max-lg:mb-10;
+}
+
+.projectList .ActiveProject span, .projectList li span:hover {
+    @apply text-pf-green;
+}
+
+.projectList .ActiveProject span {
+    @apply border border-pf-green;
+}
+
+.project {
+    @apply h-full;
+}
+
+/*Partie composant*/
+.project .details {
+    @apply p-5 sm:p-8 md:p-11 rounded-lg relative h-full;
+}
+
+.project .details::before {
+    @apply content-[""] absolute top-0 left-0 rounded-lg w-full h-full bg-pf-deep-blue1 opacity-90;
+}
+
+.project .details * {
+    @apply relative;
+}
+
+.project .details h3 {
+    @apply text-white font-josefin font-medium text-lg sm:text-xl relative mb-4;
+}
+
+.project .details .projectText {
+    @apply text-[#dddddd] font-normal text-sm sm:text-base leading-6 font-sans relative mb-8 tracking-wide;
+}
+
+.project .details h4 {
+    @apply text-white font-josefin font-medium text-base sm:text-lg relative mb-4;
+}
+
+.project .details ul {
+    @apply list-none p-0 flex flex-wrap gap-x-2 gap-y-3 mb-10;
+}
+
+.project .details ul li {
+    @apply border-2 border-pf-green text-pf-green text-sm sm:text-base border-opacity-70 font-bold py-1 px-4 rounded-full;
+}
+
+.project .details ul li div {
+    @apply flex items-center gap-2;
+}
+
+.project .details a {
+    @apply text-sm sm:text-base py-2 px-4 font-semibold text-white uppercase border-2 border-pf-green bg-pf-green rounded font-sans inline-block transition-all duration-300 ease-in-out no-underline;
+}
+
+.project .details a:hover {
+    @apply bg-transparent text-pf-green;
+}
