@@ -65,7 +65,7 @@
   <section class="pt-16 sm:pt-24" id="competences">
     <div class="w-full container">
       <TitleComponent title="Compétences"/>
-      <div class="grid gap-12">
+      <div class="grid gap-y-8">
         <AppSkills v-for="(category, index) in skills" :key="index" :title="category.title" :skills="category.list"/>
       </div>
     </div>
