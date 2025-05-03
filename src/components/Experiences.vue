@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-wrap bg-[#272440] rounded-lg mb-7">
+  <div class="flex flex-wrap bg-[#272440] mb-7">
 
-    <div class="bg-pf-deep-blue1 w-full lg:w-80 rounded-tl-lg rounded-bl-lg p-7 flex flex-wrap justify-center items-center">
+    <div class="bg-pf-deep-blue1 w-full lg:w-80 p-7 flex flex-wrap justify-center items-center">
       <img :src="`${logoUrl}`" alt="Logo de la société" class="size-32 align-middle bg-gray-100 rounded-full">
     </div>
 

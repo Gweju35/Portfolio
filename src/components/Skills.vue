@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 sm:py-6 sm:px-10 lg:py-8 lg:px-16 rounded-2xl bg-pf-deep-blue1 flex flex-col items-center">
+  <div class="p-6 sm:py-6 sm:px-10 lg:py-8 lg:px-16 bg-pf-deep-blue1 flex flex-col items-center">
     <h3 class="text-xl md:text-2xl font-josefin font-medium text-center text-pf-green mb-6">{{ title }}</h3>
     <div class="flex flex-wrap justify-center gap-6 sm:gap-x-10">
       <div v-for="(skill, index) in skills" :key="index" class="flex flex-col min-w-24">

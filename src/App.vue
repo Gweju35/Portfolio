@@ -45,7 +45,7 @@
         <div class="projectMenu w-full md:w-44 md:overflow-x-hidden md:h-[590px] xl:h-[510px]">
           <ul class="projectList gap-1.5 sm:gap-4 p-0 text-lg border-none flex flex-wrap list-none justify-center">
             <li v-for="(project, index) in projects" :key="project.id" @click="setActiveProject(index)" :class="['cursor-pointer list-none', { 'ActiveProject': index === activeProjectIndex }]">
-              <span class="py-4 px-1 min-w-32 sm:min-w-40 text-sm sm:text-base text-center  border-2 border-[#272440] rounded bg-pf-deep-blue1 font-josefin block transition-colors duration-300 ease-in-out hover:text-pf-green">
+              <span class="py-4 px-1 min-w-32 sm:min-w-40 text-sm sm:text-base text-center  border-2 border-[#272440] bg-pf-deep-blue1 font-josefin block transition-colors duration-300 ease-in-out hover:text-pf-green">
                 {{ project.title }}
               </span>
             </li>

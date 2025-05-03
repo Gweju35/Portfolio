@@ -526,7 +526,6 @@ li i{
 .project .details{
   position: relative;
   height: 100%;
-  border-radius: 0.5rem;
   padding: 1.25rem;
 }
 
@@ -548,7 +547,6 @@ li i{
   left: 0px;
   height: 100%;
   width: 100%;
-  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(32 29 58 / var(--tw-bg-opacity, 1));
   opacity: 0.9;
@@ -3608,14 +3606,6 @@ video {
   .xl\:gap-x-0{
     -moz-column-gap: 0px;
          column-gap: 0px;
-  }
-
-  .xl\:rounded-bl-none{
-    border-bottom-left-radius: 0px;
-  }
-
-  .xl\:rounded-tr-none{
-    border-top-right-radius: 0px;
   }
 
   .xl\:text-5xl{

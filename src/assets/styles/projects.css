@@ -28,11 +28,11 @@
 
 /*Partie composant*/
 .project .details {
-    @apply p-5 sm:p-8 md:p-11 rounded-lg relative h-full;
+    @apply p-5 sm:p-8 md:p-11 relative h-full;
 }
 
 .project .details::before {
-    @apply content-[""] absolute top-0 left-0 rounded-lg w-full h-full bg-pf-deep-blue1 opacity-90;
+    @apply content-[""] absolute top-0 left-0 w-full h-full bg-pf-deep-blue1 opacity-90;
 }
 
 .project .details * {

@@ -19,8 +19,8 @@
           <!--Image-->
             <div class="relative">
               <img src="~@/assets/images/photo.png" class="z-10 bg-cover relative" alt="Photo">
-              <div class="absolute w-full h-full border-[3px] border-pf-green z-10 rounded-lg xl:rounded-bl-none xl:rounded-tr-none border-l-0 border-t-0 left-0 top-0 xl:left-5 xl:top-5"></div>
-              <div class="absolute w-full h-full border-[3px] border-pf-green z-10 rounded-lg xl:rounded-bl-none xl:rounded-tr-none border-r-0 border-b-0 right-0 top-0 xl:right-5 xl:-top-5"></div>
+              <div class="absolute w-full h-full border-[3px] border-pf-green z-10 border-l-0 border-t-0 left-0 top-0 xl:left-5 xl:top-5"></div>
+              <div class="absolute w-full h-full border-[3px] border-pf-green z-10 border-r-0 border-b-0 right-0 top-0 xl:right-5 xl:-top-5"></div>
             </div>
         </div>
       </div>
