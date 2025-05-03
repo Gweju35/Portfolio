@@ -2,14 +2,6 @@
   "projects": [
     {
       "id": 1,
-      "skills": [
-        "Réaliser",
-        "Optimiser",
-        "Administrer",
-        "Gérer",
-        "Conduire",
-        "Collaborer"
-      ],
       "title": "Mayenne Innove",
       "subtitle": "Intégration du site web \"la Mayenne Innove\"",
       "text": "Dans le cadre de mon alternance, j'ai réalisé le site \"La Mayenne Innove\" pour le journal Ouest-France. J'ai utilisé Wordpress pour gérer la partie back-office du site, en créant des champs ACF pour offrir au client la possibilité de gérer lui-même le contenu de son site. Puis j'ai intégré les maquettes Desktop/Mobile en PHP, HTML, TailwindCSS et JavaScript. Je me suis appuyé sur Jira pour la gestion de tâches et sur Git pour versionner mon code.",
@@ -28,14 +20,6 @@
     },
     {
       "id": 1,
-      "skills": [
-        "Réaliser",
-        "Optimiser",
-        "Administrer",
-        "Gérer",
-        "Conduire",
-        "Collaborer"
-      ],
       "title": "Alhaiz Breizh",
       "subtitle": "Création d'un site de réservations de logements",
       "text": "En équipe, nous avons créé un site de réservations de logements pour l'entreprise fictive \"Alhaiz Breizh\" en suivant la méthode SCRUM. Le projet a débuté par la conception d'un diagramme UML et la définition de User Stories, suivie de la création de la base de données et des maquettes Desktop/Mobile sur Figma. Le site a été programmé en PHP, HTML, CSS et JavaScript. Ce projet s'est appuyé sur l'utilisation de Trello pour tenir à jour le backlog et Git pour le versionnement de code.",
@@ -55,13 +39,6 @@
     },
     {
       "id": 2,
-      "skills": [
-        "Réaliser",
-        "Optimiser",
-        "Gérer",
-        "Conduire",
-        "Collaborer"
-      ],
       "title": "WebApp Pokémon",
       "subtitle": "Réalisation d'une WebApp Pokémon",
       "text": "Ce projet en binôme consistait à développer une WebApp affichant des informations sur 898 Pokémons, permettant recherche, tri et filtrage selon divers critères. Nous avons d’abord créé des scripts JavaScript pour lire les données JSON des Pokémon, puis les avons affichées dans un tableau avec pagination. Une popup affichant les caractéristiques d’un Pokémon a été ajoutée au clic sur une ligne. Enfin, nous avons implémenté les filtres, tris (via les en-têtes de colonnes) et rendu l’application responsive en HTML/CSS.",
@@ -76,10 +53,6 @@
     },
     {
       "id": 3,
-      "skills": [
-        "Réaliser",
-        "Optimiser"
-      ],
       "title": "Jeu Puissance 4",
       "subtitle": "Création d'un jeu de Puissance 4",
       "text": "Ce projet de création d’un jeu de Puissance 4 s’est structuré en deux étapes : une partie conception et une partie réalisation. Lors de la phase de conception, j’ai élaboré une maquette, rédigé un algorithme en pseudo-code et listé les procédures et fonctions nécessaires. Dans la phase de réalisation, j’ai programmé le jeu en langage C, produit un cahier de tests avec traces d’exécution, et rédigé une documentation Doxygen du code source.\n\n\n\n\n\n\n",
@@ -92,9 +65,6 @@
     },
     {
       "id": 4,
-      "skills": [
-        "Optimiser"
-      ],
       "title": "IA Puissance 4",
       "subtitle": "Implémentation d'une IA pour un jeu de Puissance 4",
       "text": "Ce projet prolonge celui de la création du jeu Puissance 4, en y ajoutant un mode joueur contre ordinateur. J'ai d'abord défini la stratégie de l'IA, basée sur l'algorithme MinMax, puis je l'ai programmée en langage C. Enfin, j'ai évalué ses performances en la confrontant aux IA de mes camarades de classe.",
@@ -107,9 +77,6 @@
     },
     {
       "id": 4,
-      "skills": [
-        "Administrer"
-      ],
       "title": "Générateur PDF",
       "subtitle": "Création d'un générateur de PDF",
       "text": "Ce projet visait à créer un environnement de développement Dockerisé, paramétrable et documenté, capable de générer une série de PDF. J'ai d'abord conçu un modèle de page web en HTML/CSS, puis extrait des données avec PHP à partir de fichiers bruts pour les intégrer à la page. Enfin, j'ai développé un script pour convertir cette page HTML en PDF.",
@@ -126,10 +93,6 @@
     },
     {
       "id": 5,
-      "skills": [
-        "Gérer",
-        "Collaborer"
-      ],
       "title": "Création BDD",
       "subtitle": "Création d'une base de données",
       "text": "Ce projet en binôme avait pour but de créer une base de données sur \"Les Rencontres Trans Musicales de Rennes\". Nous avons d'abord conçu un diagramme de classe répondant aux différentes gestions de l'événement, puis l'avons traduit vers le modèle relationnel avant de l’implémenter en SQL.",
@@ -143,10 +106,6 @@
     },
     {
       "id": 6,
-      "skills": [
-        "Gérer",
-        "Collaborer"
-      ],
       "title": "Exploitation BDD",
       "subtitle": "Exploitation d'une base de données",
       "text": "Ce projet en binôme visait à exploiter une base de données sur les admissions ParcourSup dans toutes les formations de France en 2022. Nous avons d’abord traduit et implanté un schéma relationnel, peuplé et exploité notre base de données, puis réalisé une analyse statistique de cette base avec une régression linéaire multiple.",
@@ -161,11 +120,6 @@
     },
     {
       "id": 7,
-      "skills": [
-        "Administrer",
-        "Conduire",
-        "Collaborer"
-      ],
       "title": "Services réseaux",
       "subtitle": "Installation de services réseaux",
       "text": "Ce projet en groupe consistait à installer et configurer les services nécessaires au développement d’un site web. Sous un environnement Linux, nous avons utilisé une machine virtuelle avec un serveur Apache, une base de données MySQL et PHP. Après avoir installé et configuré ces services, nous avons créé des pages web dynamiques, des pages d’erreurs personnalisées et un espace sécurisé nécessitant une authentification par login et mot de passe.",
@@ -181,9 +135,6 @@
     },
     {
       "id": 8,
-      "skills": [
-        "Optimiser"
-      ],
       "title": "Problème 8 Reines",
       "subtitle": "Résolution du problème des Huit Reines",
       "text": "Ce projet visait à créer un algorithme pour résoudre le problème des Huit Reines, qui consiste à placer huit reines sur un échiquier de façon à ce qu'aucune ne puisse attaquer une autre en un seul coup. J’ai d’abord développé un algorithme de backtracking permettant de déterminer une solution, puis un algorithme de parcours en profondeur comme méthode de comparaison.",
@@ -196,11 +147,6 @@
     },
     {
       "id": 9,
-      "skills": [
-        "Réaliser",
-        "Optimiser",
-        "Conduire"
-      ],
       "title": "Jeu des Lettres",
       "subtitle": "Création d'un jeu de Lettres",
       "text": "Ce projet, réalisé en classe de Première spécialité NSI, visait à recréer la partie \"Lettres\" du jeu télévisé \"Des chiffres et des lettres\". 2 joueurs doivent composer le mot le plus long possible avec les lettres qui leurs sont données à disposition. J’ai d’abord conçu les maquettes du jeu, puis l’ai programmé en Python en utilisant la bibliothèque PyGame.",

@@ -3,9 +3,6 @@
 <!--  a details :  mettre la même taille que celle de la liste des projets si on veut qu'un projet ai la même taille que les autres peu importe le contenu-->
     <div class="details">
       <div>
-        <div class="mb-6 flex flex-wrap gap-2">
-          <div v-for="(skill, skillIndex) in skills" :key="skillIndex" class="bg-pf-green bg-opacity-80 w-fit py-1 px-2 rounded text-white text-sm">{{ skill }}</div>
-        </div>
         <h3 class="title">{{ subtitle }}</h3>
         <div class="projectText" v-html="text"></div>
         <h4 class="outils-title">Outils utilisés</h4>
@@ -26,10 +23,6 @@
 export default {
   name: 'AppProjects',
   props: {
-    skills : {
-      type: Array,
-      required: true
-    },
     subtitle: {
       type: String,
       required: true

@@ -15,10 +15,6 @@
               <span class="text-pf-green block">Je suis</span>Julien Perriguey
             </h1>
             <h2 class="font-josefin italic text-pf-green font-semibold text-3xl md:text-4xl xl:text-5xl mb-4 md:mb-6 xl:mb-8">Alternant Développeur front-end</h2>
-            <a href="#projets" @click="smoothScroll($event)" class="gap-x-2 text-sm sm:text-base py-2 px-4 font-semibold text-white uppercase border-2 border-pf-green bg-pf-green rounded font-sans flex flex-row items-center w-fit transition-all duration-300 ease-in-out no-underline md:hover:bg-transparent md:hover:text-pf-green">
-              Accéder aux projets
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
           </div>
           <!--Image-->
             <div class="relative">

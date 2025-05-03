@@ -28,7 +28,7 @@ const config = {
             container: {
                 center: true,
                 padding: '1rem'
-            },
+            }
         },
     },
     plugins: [],
