@@ -12,8 +12,8 @@
           </li>
         </ul>
         <!-- Bouton conditionnel -->
-        <a v-if="!download" :href="buttonLink" target="_blank">{{ buttonTitle }}</a>
-        <a v-else :href="buttonLink" download>{{ buttonTitle }}</a>
+        <a v-if="state === 'link'" :href="buttonLink" target="_blank">{{ buttonTitle }}</a>
+        <a v-else-if="state === 'download'" :href="buttonLink" download>{{ buttonTitle }}</a>
       </div>
     </div>
   </div>
@@ -43,8 +43,8 @@ export default {
       type: String,
       required: true
     },
-    download: {
-      type: Boolean,
+    state: {
+      type: String,
       required: true
     }
   }

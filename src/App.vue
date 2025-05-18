@@ -55,7 +55,7 @@
         <div class="w-full md:w-[calc(100%-215px)]">
           <AppProjects v-for="(project, index) in projects" :key="project.id" v-show="index === activeProjectIndex"
           :skills="project.skills" :subtitle="project.subtitle" :text="project.text" :tools="project.tools" :buttonLink="project.buttonLink"
-          :buttonTitle="project.buttonTitle" :download="project.download"/>
+          :buttonTitle="project.buttonTitle" :state="project.state"/>
         </div>
       </div>
     </div>
