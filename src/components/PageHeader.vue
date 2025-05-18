@@ -14,7 +14,10 @@
             <h1 class="uppercase text-5xl md:text-7xl md:leading-[80px] xl:text-8xl xl:leading-[96px] font-bold m-0 text-white font-josefin mb-4 md:mb-6 xl:mb-8">
               <span class="text-pf-green block">Je suis</span>Julien Perriguey
             </h1>
-            <h2 class="font-josefin italic text-pf-green font-semibold text-3xl md:text-4xl xl:text-5xl mb-4 md:mb-6 xl:mb-8">Alternant Développeur front-end</h2>
+            <h2 class="font-josefin italic text-pf-white font-semibold text-xl sm:text-2xl md:text-3xl mb-4 md:mb-6 xl:mb-8">
+              Futur étudiant à l'<a class="text-pf-green" href="https://ensim.univ-lemans.fr/fr/nos-formations/nos-formations/informatique.html" target="_blank">
+              ENSIM</a>, à la recherche d'une alternance en développement web
+            </h2>
           </div>
           <!--Image-->
             <div class="relative">
