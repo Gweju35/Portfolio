@@ -75,7 +75,7 @@
 
 <script>
 export default {
-  name: 'AppContact',
+  name: 'AppFooter',
   mounted() {
     // Empêcher le changement d'URL pour les liens de navigation
     this.$nextTick(() => {
