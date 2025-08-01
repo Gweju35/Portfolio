@@ -123,6 +123,8 @@ body::-webkit-scrollbar-thumb{
   }
 }
 
+/* Menu burger */
+
 .burger.active span:first-child {
   transform: rotate(45deg) translate(3px, 9px);
 }
@@ -186,10 +188,6 @@ li i{
   transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.degreeDescription a:hover, .jobDescription a:hover{
-  text-decoration-line: underline;
 }
 
 .skillIcon svg{
@@ -290,6 +288,22 @@ li i{
   overflow: hidden;
   height: 100vh;
   /* Bloquer complètement le défilement */
+}
+
+/* Animation au survol d'un lien */
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#08D565, #08D565);
+  background-size: 0 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .3s ease-in-out;
+}
+
+.link-underline:hover {
+  background-size: 100% 1px;
+  background-position: 0 100%
 }
 
 .homeShape{
@@ -625,7 +639,6 @@ li i{
 }
 
 .project .details ul li{
-  border-radius: 9999px;
   border-width: 2px;
   border-color: rgb(8 213 101 / var(--tw-border-opacity, 1));
   --tw-border-opacity: 0.7;
@@ -655,7 +668,6 @@ li i{
 
 .project .details a{
   display: inline-block;
-  border-radius: 0.25rem;
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(8 213 101 / var(--tw-border-opacity, 1));
@@ -3099,12 +3111,12 @@ video {
   color: rgb(8 213 101 / var(--tw-text-opacity, 1));
 }
 
-.text-white{
+.text-pf-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-pf-white{
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -3240,6 +3252,10 @@ video {
 
   .sm\:mb-16{
     margin-bottom: 4rem;
+  }
+
+  .sm\:flex{
+    display: flex;
   }
 
   .sm\:size-9{
@@ -3432,9 +3448,9 @@ video {
     line-height: 2rem;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-6xl{
@@ -3445,11 +3461,6 @@ video {
   .md\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .md\:leading-\[70px\]{
@@ -3634,11 +3645,6 @@ video {
   .xl\:gap-x-0{
     -moz-column-gap: 0px;
          column-gap: 0px;
-  }
-
-  .xl\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .xl\:text-8xl{

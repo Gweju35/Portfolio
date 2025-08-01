@@ -44,6 +44,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+/* Menu burger */
 .burger.active span:first-child {
     transform: rotate(45deg) translate(3px, 9px);
 }
@@ -82,10 +83,6 @@ li i {
 
 .degreeDescription a, .jobDescription a {
     @apply transition-all ease-in-out duration-300 no-underline;
-}
-
-.degreeDescription a:hover, .jobDescription a:hover {
-    @apply underline;
 }
 
 .skillIcon svg {
@@ -129,4 +126,19 @@ li i {
 .no-scroll {
     overflow: hidden;
     height: 100vh; /* Bloquer complètement le défilement */
+}
+
+/* Animation au survol d'un lien */
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#08D565, #08D565);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s ease-in-out;
+}
+
+.link-underline:hover {
+    background-size: 100% 1px;
+    background-position: 0 100%
 }

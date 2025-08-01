@@ -15,8 +15,8 @@
               <span class="text-pf-green block">Je suis</span>Julien Perriguey
             </h1>
             <h2 class="font-josefin italic text-pf-white font-semibold text-xl sm:text-2xl md:text-3xl mb-4 md:mb-6 xl:mb-8">
-              Futur étudiant à l'<a class="text-pf-green" href="https://ensim.univ-lemans.fr/fr/nos-formations/nos-formations/informatique.html" target="_blank">
-              ENSIM</a>, à la recherche d'une alternance en développement web
+              Futur étudiant à <a class="link-underline text-pf-green" href="https://ensim.univ-lemans.fr/fr/nos-formations/nos-formations/informatique.html" target="_blank">
+              l'ENSIM</a>, à la recherche d'une alternance en développement web
             </h2>
           </div>
           <!--Image-->

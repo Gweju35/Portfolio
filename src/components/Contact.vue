@@ -16,11 +16,11 @@
         </div>
         <!-- Liens de contact -->
         <div class="mt-12 flex flex-col md:mt-0 lg:block lg:mx-auto w-full ">
-          <h2 class="mb-6 font-bold text-xl text-pf-green uppercase md:mb-4 lg:mb-10">Contactez-moi</h2>
+          <h2 class="mb-6 font-josefin font-bold text-xl text-pf-green md:mb-4 lg:mb-10">Contactez-moi</h2>
           <ul class="flex flex-col ">
             <li class="mb-4 text-lg text-bold lg:text-start">
               <div class="max-w-96 sm:max-w-none lg:max-w-96">
-                <a href="mailto:julienprgy@gmail.com" class="flex items-center w-fit gap-x-3 text-base text-white md:hover:text-pf-green font-medium transition-colors duration-300 ease-in-out">
+                <a href="mailto:julienprgy@gmail.com" class="group flex items-center w-fit gap-x-3 text-base text-white md:hover:text-pf-green font-medium transition-colors duration-300 ease-in-out">
                   <i class="fa-solid fa-envelope"></i>
                   <p>julienprgy@gmail.com</p>
                 </a>
@@ -54,7 +54,7 @@
         </div>
         <!-- Navigation du site -->
         <div class="mt-12 flex flex-col md:mt-0 lg:block lg:mx-auto w-full">
-          <h2 class="mb-6  font-bold text-xl text-pf-green uppercase md:mb-4 lg:mb-10">Navigation</h2>
+          <h2 class="mb-6 font-josefin font-bold text-xl text-pf-green md:mb-4 lg:mb-10">Navigation</h2>
           <ul class="font-normal text-white text-lg gap-y-3 gap-x-10 p-0 flex flex-col md:flex-row md:gap-x-8 lg:flex-col lg:grid xl:grid-cols-2 xl:gap-x-0">
             <li><a href="#diplomes" @click="smoothScroll($event)" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Diplômes</a></li>
             <li><a href="#experiences" @click="smoothScroll($event)" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Expériences</a></li>
@@ -67,7 +67,7 @@
       </div>
     </div>
     <!-- Copyright -->
-    <div class="flex items-center justify-center bg-pf-darkblue">
+    <div class="container flex items-center justify-start bg-pf-darkblue">
       <span class="py-5 text-pf-green text-sm font-bold sm:text-base text-center">© 2025 Julien Perriguey, Tous droits réservés.</span>
     </div>
   </footer>

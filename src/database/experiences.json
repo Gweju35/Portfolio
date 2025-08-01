@@ -3,19 +3,19 @@
     {
       "id": 1,
       "title": "Développeur Web Front End (2024-AUJ.)",
-      "text": "Depuis septembre 2024, je suis alternant chez <a href=\"https://cobalt-studio.fr/\" target=\"_blank\" class=\"font-bold underline text-pf-green\">Cobalt Studio</a> à Rennes en tant que développeur web frontend. Mon rôle est d’intégrer des sites web sur mesure pour divers clients en utilisant WordPress afin d’offrir une grande autonomie dans la gestion de contenu de chaque site. J'utilise les langages PHP, HTML, CSS, JavaScript et le framework TailwindCSS pour des interfaces modernes et performantes. J'assure la gestion des tâches via Jira et utilise Git pour le versionnement du code. Cette expérience me permet d'acquérir de nouvelles connaissances ainsi que de consolider mes compétences techniques, tout en travaillant sur des projets concrets et variés.",
+      "text": "Depuis septembre 2024, je suis alternant chez <a href=\"https://cobalt-studio.fr/\" target=\"_blank\" class=\"link-underline font-bold text-pf-green\">Cobalt Studio</a> à Rennes en tant que développeur web frontend. Mon rôle est d’intégrer des sites web sur mesure pour divers clients en utilisant WordPress afin d’offrir une grande autonomie dans la gestion de contenu de chaque site. J'utilise les langages PHP, HTML, CSS, JavaScript et le framework TailwindCSS pour des interfaces modernes et performantes. J'assure la gestion des tâches via Jira et utilise Git pour le versionnement du code. Cette expérience me permet d'acquérir de nouvelles connaissances ainsi que de consolider mes compétences techniques, tout en travaillant sur des projets concrets et variés.",
       "img": "cobalt"
     },
     {
       "id": 2,
       "title": "Développeur web (2024)",
-      "text": "De mai à juillet 2024, j’ai effectué un stage de 11 semaines dans l'entreprise <a href=\"https://www.heyliot.com/\" target=\"_blank\" class=\"font-bold underline text-pf-green\">Heyliot</a>, à Rennes, en tant que développeur web. J’ai participé au développement de leur application client grâce aux frameworks Symfony, Stimulus et TailwindCSS, ainsi que les langages PHP, TypeScript, HTML, et CSS. J’ai aussi collaboré avec l’équipe pour résoudre des problèmes techniques et optimiser l’expérience utilisateur. Cette expérience m’a permis d’approfondir et de mettre en pratique mes connaissances tout en acquérant de nouvelles compétences.",
+      "text": "De mai à juillet 2024, j’ai effectué un stage de 11 semaines dans l'entreprise <a href=\"https://www.heyliot.com/\" target=\"_blank\" class=\"link-underline font-bold text-pf-green\">Heyliot</a>, à Rennes, en tant que développeur web. J’ai participé au développement de leur application client grâce aux frameworks Symfony, Stimulus et TailwindCSS, ainsi que les langages PHP, TypeScript, HTML, et CSS. J’ai aussi collaboré avec l’équipe pour résoudre des problèmes techniques et optimiser l’expérience utilisateur. Cette expérience m’a permis d’approfondir et de mettre en pratique mes connaissances tout en acquérant de nouvelles compétences.",
       "img": "heyliot"
     },
     {
       "id": 3,
       "title": "Ouvrier polyvalent (2023)",
-      "text": "En juillet et août 2023, j'ai occupé le poste d'ouvrier polyvalent dans l'entreprise <a href=\"https://www.salaisonbiovaleur.fr/\" target=\"_blank\" class=\"font-bold underline text-pf-green\">Salaison Bio Valeur</a>, à Louvigné-Du-Désert, pour une durée de 8 semaines. J'ai réalisé la découpe de viandes et la mise sous-vide des produits sur des machines, ainsi que le nettoyage des salles de travail. Les commandes des clients arrivant le jour même, ce travail m'a permis de gagner en autonomie et en efficacité.",
+      "text": "En juillet et août 2023, j'ai occupé le poste d'ouvrier polyvalent dans l'entreprise <a href=\"https://www.salaisonbiovaleur.fr/\" target=\"_blank\" class=\"link-underline font-bold text-pf-green\">Salaison Bio Valeur</a>, à Louvigné-Du-Désert, pour une durée de 8 semaines. J'ai réalisé la découpe de viandes et la mise sous-vide des produits sur des machines, ainsi que le nettoyage des salles de travail. Les commandes des clients arrivant le jour même, ce travail m'a permis de gagner en autonomie et en efficacité.",
       "img": "sbv"
     },
     {

@@ -56,7 +56,7 @@
 }
 
 .project .details ul li {
-    @apply border-2 border-pf-green text-pf-green text-sm sm:text-base border-opacity-70 font-bold py-1 px-4 rounded-full;
+    @apply border-2 border-pf-green text-pf-green text-sm sm:text-base border-opacity-70 font-bold py-1 px-4;
 }
 
 .project .details ul li div {
@@ -64,7 +64,7 @@
 }
 
 .project .details a {
-    @apply text-sm sm:text-base py-2 px-4 font-semibold text-white uppercase border-2 border-pf-green bg-pf-green rounded font-sans inline-block transition-all duration-300 ease-in-out no-underline;
+    @apply text-sm sm:text-base py-2 px-4 font-semibold text-white uppercase border-2 border-pf-green bg-pf-green font-sans inline-block transition-all duration-300 ease-in-out no-underline;
 }
 
 .project .details a:hover {
