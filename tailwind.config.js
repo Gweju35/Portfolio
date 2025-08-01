@@ -14,8 +14,9 @@ const config = {
     ],
     theme: {
         fontFamily: {
-            sans: ['"Open Sans"', 'sans-serif'],
-            josefin: ['"Josefin Sans"', 'sans-serif'],
+            'sans' : ['Open Sans', 'sans-serif'],
+            'josefin': ['Josefin Sans', 'sans-serif'],
+            'body': ['Onest', 'sans-serif'],
         },
         extend: {
             colors: {
