@@ -1,4 +1,4 @@
-/* Navbar */
+/* ----- Barre de navigation ----- */
 @media (max-width: 1024px) {
     .menu {
         @apply w-full absolute top-full left-0 z-10 bg-[#272440] overflow-auto block transition-all duration-300 ease-linear scale-y-0 origin-top;
@@ -18,7 +18,7 @@
     }
 }
 
-/* Menu burger */
+/* ----- Menu mobile ----- */
 .burger.active span:first-child {
     transform: rotate(45deg) translate(3px, 9px);
 }

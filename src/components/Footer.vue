@@ -9,7 +9,7 @@
               <img src="~@/assets/images/logo.svg" class="h-28 w-28" alt="Portfolio Logo" loading="lazy">
             </a>
           </div>
-          <a @click="downloadFile" class="flex cursor-pointer w-fit gap-x-2 mb-6 md:my-4 max-w-72 sm:max-w-none lg:max-w-72 text-sm sm:text-base py-2 px-4 font-semibold text-white uppercase border-2 border-pf-green bg-pf-green rounded font-sans transition-all duration-300 ease-in-out no-underline md:hover:bg-transparent md:hover:text-pf-green">
+          <a class="flex cursor-pointer w-fit gap-x-2 mb-6 md:my-4 max-w-72 sm:max-w-none lg:max-w-72 text-sm sm:text-base py-2 px-4 font-semibold text-white uppercase border-2 border-pf-green bg-pf-green rounded font-sans transition-all duration-300 ease-in-out no-underline md:hover:bg-transparent md:hover:text-pf-green">
             <p><i class="fa-solid fa-download"></i></p>
             <p>Télécharger mon CV</p>
           </a>
@@ -56,11 +56,11 @@
         <div class="mt-12 flex flex-col md:mt-0 lg:block lg:mx-auto w-full">
           <h2 class="mb-6 font-josefin font-bold text-xl text-pf-green md:mb-4 lg:mb-10">Navigation</h2>
           <ul class="font-normal text-white text-lg gap-y-3 gap-x-10 p-0 flex flex-col md:flex-row md:gap-x-8 lg:flex-col lg:grid xl:grid-cols-2 xl:gap-x-0">
-            <li><a href="#diplomes" @click="smoothScroll($event)" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Diplômes</a></li>
-            <li><a href="#experiences" @click="smoothScroll($event)" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Expériences</a></li>
-            <li><a href="#projets" @click="smoothScroll($event)" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Projets</a></li>
-            <li><a href="#competences" @click="smoothScroll($event)" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Compétences</a></li>
-            <li><a href="#contacts" @click="smoothScroll($event)" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Contact</a></li>
+            <li><a href="#diplomes" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Diplômes</a></li>
+            <li><a href="#experiences" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Expériences</a></li>
+            <li><a href="#projets" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Projets</a></li>
+            <li><a href="#competences" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Compétences</a></li>
+            <li><a href="#contacts" class="contact-links transition-all duration-300 ease-in-out md:hover:text-pf-green font-medium">Contact</a></li>
 
           </ul>
         </div>
@@ -74,42 +74,15 @@
 </template>
 
 <script>
+import { onMounted } from 'vue';
+import { initFooter } from "@/assets/js/common/initFooter";
+
 export default {
   name: 'AppFooter',
-  mounted() {
-    // Empêcher le changement d'URL pour les liens de navigation
-    this.$nextTick(() => {
-      const contactLinks = document.querySelectorAll('.contact-links');
-      contactLinks.forEach(link => {
-        link.addEventListener('click', this.smoothScroll);
-      });
+  setup() {
+    onMounted(() => {
+      initFooter();
     });
-  },
-  beforeUnmount() {
-    // Nettoyer les événements
-    const contactLinks = document.querySelectorAll('.contact-links');
-    contactLinks.forEach(link => {
-      link.removeEventListener('click', this.smoothScroll);
-    });
-  },
-  methods: {
-    downloadFile() {
-      const fileUrl = '/Portfolio/files/PERRIGUEY_Julien_CV.pdf'; // Chemin du fichier dans 'public'
-      const link = document.createElement('a'); // Crée dynamiquement un élément <a>
-      link.href = fileUrl;
-      link.download = 'PERRIGUEY_Julien_CV.pdf'; // Nom du fichier à télécharger
-      link.click(); // Simule un clic pour déclencher le téléchargement
-      link.remove(); // Nettoie l'élément après le clic
-    },
-    smoothScroll(event) {
-      event.preventDefault(); // Empêche le changement d'URL
-      const targetId = event.target.getAttribute('href'); // Récupère l'ancre (#...)
-      const targetElement = document.querySelector(targetId); // Trouve l'élément correspondant
-
-      if (targetElement) {
-        targetElement.scrollIntoView({behavior: 'smooth'}); // Fait défiler jusqu'à l'élément
-      }
-    }
   }
-}
+};
 </script>

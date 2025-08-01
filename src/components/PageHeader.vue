@@ -33,16 +33,5 @@
 <script>
 export default {
   name: 'PageHeader',
-  methods: {
-    smoothScroll(event) {
-      event.preventDefault(); // Empêche le comportement par défaut du lien
-      const targetId = event.target.getAttribute('href'); // Récupère l'ancre (#projets)
-      const targetElement = document.querySelector(targetId); // Trouve l'élément correspondant
-
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' }); // Fait défiler jusqu'à l'élément
-      }
-    },
-  },
 };
 </script>
