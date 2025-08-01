@@ -1,0 +1,81 @@
+@import "common/header.css";
+
+@import "homeShape.css";
+@import "titleSection.css";
+@import "projects.css";
+@import "loader.css";
+
+@import "common/backToTop.css";
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* ----- Corps de la page ----- */
+body {
+    @apply bg-pf-darkblue font-sans overflow-x-hidden text-[#dddddd] leading-8;
+}
+
+/* ----- Barre de scroll ----- */
+body::-webkit-scrollbar {
+    @apply w-3;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(221, 221, 221, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+    @apply bg-pf-green rounded;
+}
+
+.homeHeader {
+    background-image: url("~@/assets/images/home_background.jpg");
+}
+
+.degreeBackground {
+    background: url("~@/assets/images/degree_background.png") #272440 repeat-y left center;
+}
+
+.overlay {
+    @apply hidden w-full h-full fixed top-0 left-0 z-40 bg-black bg-opacity-70 transition-all duration-300 ease-linear invisible opacity-0;
+}
+
+.overlay.active {
+    @apply block visible opacity-100;
+}
+
+li i {
+    @apply !text-2xl;
+}
+
+.degreeDescription a, .jobDescription a {
+    @apply transition-all ease-in-out duration-300 no-underline;
+}
+
+.skillIcon svg {
+    @apply size-8 sm:size-9 lg:size-12;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh; /* Bloquer complètement le défilement */
+}
+
+/* Animation au survol d'un lien */
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#08D565, #08D565);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s ease-in-out;
+}
+
+.link-underline:hover {
+    background-size: 100% 1px;
+    background-position: 0 100%
+}

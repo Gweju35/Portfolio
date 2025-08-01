@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
 
-@import "src/assets/styles/main.css";
-@import "src/assets/styles/homeShape.css";
-@import "src/assets/styles/titleSection.css";
-@import "src/assets/styles/projects.css";
-@import "src/assets/styles/loader.css";
+@import "src/assets/styles/app.css";
 
 @tailwind base;
 @tailwind components;

@@ -1,0 +1,36 @@
+/* Navbar */
+@media (max-width: 1024px) {
+    .menu {
+        @apply w-full absolute top-full left-0 z-10 bg-[#272440] overflow-auto block transition-all duration-300 ease-linear scale-y-0 origin-top;
+        max-height: calc(100vh - 100px);
+    }
+
+    .menu.active {
+        @apply scale-y-100;
+    }
+
+    .menu li {
+        @apply border-b border-transparent container;
+    }
+
+    .menu li a {
+        @apply flex justify-between border-b border-white border-opacity-10 py-1.5 px-5 text-base uppercase;
+    }
+}
+
+/* Menu burger */
+.burger.active span:first-child {
+    transform: rotate(45deg) translate(3px, 9px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:last-child {
+    transform: rotate(-45deg) translate(3px, -9px);
+}
+
+header.active {
+    @apply bg-pf-darkblue top-0 border-b border-white border-opacity-10;
+}
