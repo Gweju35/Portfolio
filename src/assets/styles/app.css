@@ -1,5 +1,7 @@
 @import "common/header.css";
 
+@import "components/button.css";
+
 @import "homeShape.css";
 @import "titleSection.css";
 @import "projects.css";

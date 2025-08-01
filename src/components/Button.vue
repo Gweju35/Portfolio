@@ -1,14 +1,13 @@
 <template>
-  <div class="titleSection">
-    <h2 class="title">
-      <span class="shape"><span>{{ title }}</span></span>
-    </h2>
-  </div>
+  <button class="js-cta-button cta-button">
+    <span>{{ title }}</span>
+  </button>
+
 </template>
 
 <script>
 export default {
-  name: 'Button',
+  name: 'AppButton',
   props: {
     title: {
       type: String,

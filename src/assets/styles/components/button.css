@@ -1,0 +1,28 @@
+/* ----- Bouton par défaut ----- */
+.cta-button {
+    @apply relative py-2 px-4 cursor-pointer border-2 border-pf-green bg-transparent overflow-hidden;
+}
+
+.cta-button span {
+    @apply relative font-sans font-semibold text-white text-sm sm:text-base z-10 uppercase transition-colors duration-300 ease-in-out;
+}
+
+.cta-button::before,
+.cta-button::after {
+    @apply absolute top-0 left-0 w-full h-full z-0;
+}
+
+.cta-button::before {
+    @apply content-[""] bg-pf-green w-[120%] -left-[10%];
+    transform: skew(30deg);
+    transition: transform 0.5s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+/* ----- Bouton au survol ----- */
+.cta-button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.cta-button:hover span {
+    @apply text-pf-green;
+}
