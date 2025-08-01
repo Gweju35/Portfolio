@@ -1,12 +1,12 @@
 <template>
   <!-- Preloader -->
-  <div class="preloader" style="opacity: 1;">
-    <span class="loader"><span></span></span>
-    <p class="loading">Loading ...</p>
-  </div>
+<!--  <div class="preloader" style="opacity: 1;">-->
+<!--    <span class="loader"><span></span></span>-->
+<!--    <p class="loading">Loading ...</p>-->
+<!--  </div>-->
 
   <!-- Back to Top -->
-  <button class="hidden sm:flex backToTop" @click="scrollToTop" :class="{ active: isButtonActive }">
+  <button class="js-back-to-top hidden sm:flex backToTop">
     <svg class="svgIcon" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path></svg>
   </button>
 
@@ -82,7 +82,7 @@
   </section>
 
   <!-- Contacts -->
-  <AppContact/>
+  <AppFooter/>
 
 </template>
 
@@ -93,7 +93,7 @@ import AppDegrees from "@/components/Degrees.vue";
 import AppExperiences from "@/components/Experiences.vue";
 import AppProjects from "@/components/Projects.vue";
 import AppSkills from "@/components/Skills.vue";
-import AppContact from "@/components/Contact.vue";
+import AppFooter from "@/components/Footer.vue";
 
 import InterestComponent from "@/components/InterestComponent.vue";
 import TitleComponent from "@/components/TitleComponent.vue";
@@ -107,13 +107,13 @@ import jsonDataSkills from "@/database/skills.json";
 export default {
   name: 'App',
   components: {
+    AppFooter,
     AppHeader,
     PageHeader,
     AppDegrees,
     AppExperiences,
     AppProjects,
     AppSkills,
-    AppContact,
     InterestComponent,
     TitleComponent
   },
@@ -127,55 +127,45 @@ export default {
       activeProjectIndex: 0, // Index du projet actif
       projects: jsonDataProjects.projects,
       skills: jsonDataSkills.skills,
-      isButtonActive: false,
     };
   },
   methods: {
     setActiveProject(index) {
       this.activeProjectIndex = index;
     },
-    scrollToTop() {
-      window.scrollTo({
-        top: 0, // Remonte en haut de la page
-      });
-    },
-    handleScroll() {
-      const scrollPosition = window.scrollY;
-      this.isButtonActive = scrollPosition > 100; // Active le bouton si on a scrollé de 100px ou plus
-    },
   },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll); // Ajoute un écouteur de scroll
-    // Initialisation des éléments
-    const preloader = document.querySelector(".preloader");
-    const loader = document.querySelector(".loader");
-    const loading = document.querySelector(".loading");
-
-    // Gestion des transitions
-    setTimeout(() => {
-      loader.style.transition = "opacity 1s";
-      loading.style.transition = "opacity 1s";
-      loader.style.opacity = "0";
-      loading.style.opacity = "0";
-    }, 500);
-
-    setTimeout(() => {
-      preloader.style.transition = "opacity 1.5s";
-      preloader.style.opacity = "0";
-    }, 1000);
-
-    setTimeout(() => {
-      preloader.style.display = "none";
-    }, 2500);
-
-    // Attribution d'une classe aléatoire au loader
-    const loaderClasses = ["loader-quart", "loader-double", "loader-circles", "loader-bars"];
-    const randomIndex = Math.floor(Math.random() * loaderClasses.length);
-    loader.classList.add(loaderClasses[randomIndex]);
-  },
-  beforeUnmount() {
-    window.removeEventListener("scroll", this.handleScroll); // Supprime l'écouteur de scroll
-  },
+  // mounted() {
+  //   window.addEventListener("scroll", this.handleScroll); // Ajoute un écouteur de scroll
+  //   // Initialisation des éléments
+  //   const preloader = document.querySelector(".preloader");
+  //   const loader = document.querySelector(".loader");
+  //   const loading = document.querySelector(".loading");
+  //
+  //   // Gestion des transitions
+  //   setTimeout(() => {
+  //     loader.style.transition = "opacity 1s";
+  //     loading.style.transition = "opacity 1s";
+  //     loader.style.opacity = "0";
+  //     loading.style.opacity = "0";
+  //   }, 500);
+  //
+  //   setTimeout(() => {
+  //     preloader.style.transition = "opacity 1.5s";
+  //     preloader.style.opacity = "0";
+  //   }, 1000);
+  //
+  //   setTimeout(() => {
+  //     preloader.style.display = "none";
+  //   }, 2500);
+  //
+  //   // Attribution d'une classe aléatoire au loader
+  //   const loaderClasses = ["loader-quart", "loader-double", "loader-circles", "loader-bars"];
+  //   const randomIndex = Math.floor(Math.random() * loaderClasses.length);
+  //   loader.classList.add(loaderClasses[randomIndex]);
+  // },
+  // beforeUnmount() {
+  //   window.removeEventListener("scroll", this.handleScroll); // Supprime l'écouteur de scroll
+  // },
 };
 
 </script>
