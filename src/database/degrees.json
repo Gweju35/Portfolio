@@ -2,15 +2,15 @@
   "degrees": [
     {
       "id": 1,
-      "year": "2025-2028",
+      "year": "2025-AUJ.",
       "title": "Ingénieur Informatique",
-      "text": "Futur étudiant à l'<a href=\"https://ensim.univ-lemans.fr/fr/nos-formations/nos-formations/informatique.html\" target=\"_blank\" class=\"link-underline font-bold text-pf-green\">ENSIM</a> (Le Mans Université) en 2025, je vais intégrer la formation d'ingénieur en informatique en alternance. Je vais me spécialiser dans l'Interaction Personnes Systèmes, qui me permettra de devenir un ingénieur informaticien polyvalent pouvant prendre en charge des missions d'analyse, de conception, de développement et d'évaluation intégrant des aspects technologiques, humains et sociaux."
+      "text": "Je suis actuellement en 3ème année de cycle ingénieur en informatique à l'<a href=\"https://ensim.univ-lemans.fr/fr/nos-formations/nos-formations/informatique.html\" target=\"_blank\" class=\"link-underline font-bold text-pf-green\">ENSIM</a> (Le Mans Université). J'envisage une spécialisation en 4ème année dans l'Interaction Personnes Systèmes, qui me permettra de devenir un ingénieur informaticien polyvalent pouvant prendre en charge des missions d'analyse, de conception et de développement."
     },
     {
       "id": 1,
-      "year": "2022-2025",
+      "year": "2025",
       "title": "BUT Informatique",
-      "text": "Je suis actuellement en 3ème année de BUT Informatique parcours réalisation d'applications à l'IUT de Lannion. J'occupe le poste de développeur web en alternance dans l'entreprise <a href=\"https://cobalt-studio.fr/\" target=\"_blank\" class=\"link-underline font-bold text-pf-green\">Cobalt Studio</a> à Rennes."
+      "text": "J'ai obtenu un BUT Informatique parcours réalisation d'applications à l'IUT de Lannion, avec une 3ème année réalisée en alternance. Ce diplôme m'a permis d'acquérir des compétences solides en programmation, en gestion de bases de données, en développement web et mobile, ainsi qu'en analyse et conception de systèmes informatiques."
     },
     {
       "id": 2,
